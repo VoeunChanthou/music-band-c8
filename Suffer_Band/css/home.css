@@ -261,26 +261,6 @@ header {
   font-size: 16px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Saira", sans-serif;
-}
-
-.container {
-  width: 1512px;
-  height: auto;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-}
-
-p {
-  font-size: 20px;
-}
-
 .new-album {
   height: 1200px;
   display: flex;
@@ -360,4 +340,133 @@ p {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+}
+
+footer {
+  background: #474545;
+  height: 600px;
+  display: flex;
+  padding: 90px;
+}
+
+footer {
+  padding: 100px 70px;
+  background: black;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+footer .suffer-footer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+footer .suffer-footer .logo-footer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+footer .suffer-footer .logo-footer img {
+  width: 70px;
+}
+footer .suffer-footer .logo-footer h3 {
+  font-size: 30px;
+}
+footer .suffer-footer .logo-footer h3 span {
+  color: red;
+}
+footer .suffer-footer .text-footer {
+  margin-bottom: 20px;
+}
+footer .suffer-footer .contact-footer .number-phone {
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .suffer-footer .contact-footer .number-phone i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer .suffer-footer .contact-footer .email {
+  display: flex;
+}
+footer .suffer-footer .contact-footer .email i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer .about-footer {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+footer .about-footer h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+footer .about-footer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .about-footer ul li {
+  font-size: 20px;
+  padding-top: 30px;
+  font-weight: bolder;
+  list-style-type: circle;
+  margin-left: 20px;
+}
+footer .our-social {
+  width: 300px;
+}
+footer .our-social h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+footer .our-social .our {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+footer .our-social .our h5 {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+footer .our-social .our h5 i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+footer .our-social .our h5 a {
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+footer .copyright {
+  position: absolute;
+  margin-top: 540px;
+  margin-left: 450px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Saira", sans-serif;
+}
+
+.container {
+  width: 1512px;
+  height: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
 }/*# sourceMappingURL=home.css.map */
