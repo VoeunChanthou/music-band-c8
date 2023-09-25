@@ -1,0 +1,25 @@
+@import './components/nav';
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+}
+.container {
+    width: 1512px;
+    height: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+}

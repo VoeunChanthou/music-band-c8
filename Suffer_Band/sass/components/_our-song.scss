@@ -1,0 +1,68 @@
+
+
+
+.our-song {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background: #363636;
+    padding-bottom: 70px;
+    .song-title {
+        margin-top: 70px;
+        text-align: center;
+        h2 {
+            font-size: 33px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: #DB3E34;
+            font-weight: bolder;
+        }
+    }
+
+    .group-song {
+        margin: 50px 150px;
+        padding: 20px 70px 50px 70px;
+        background: #414141;
+        display: flex;
+        flex-direction: column;
+        .song-card {
+            margin-top: 30px;
+            .box {
+                display: flex;
+                align-items: center;
+                background: rgb(255, 255, 255);
+                .song-img {
+                    width: 80px;
+                    height: 60px;
+                }
+                .song {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    audio {
+                        width: 100%;
+                    
+                    }
+                }
+
+            }
+            label {
+                color: white;
+                font-size: 20px;
+            }
+        }
+
+        button {
+            align-self: center;
+            margin-top: 25px;
+            width: 170px;
+            height: 35px;
+            background: #DB3E34;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+    }
+
+}
