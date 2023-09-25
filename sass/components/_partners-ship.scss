@@ -1,0 +1,44 @@
+
+
+
+.parthners-ship {
+    background: #363636;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    .partners {
+        margin-top: 55px;
+        text-align: center;
+        h2 {
+            font-size: 33px;
+            color: #DB3E34;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    }
+    .group-card {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 40px;
+        height: 260px;
+        display: flex;
+        justify-content: space-between;
+        .card {
+            background: #4940406c;
+            width: 340px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 40px;
+            h3 {
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: bolder;
+                color: white;
+            }
+            h3:nth-child(2) {
+                color: #DB3E34;
+                font-weight: bolder;
+            }
+        }
+    }
+}

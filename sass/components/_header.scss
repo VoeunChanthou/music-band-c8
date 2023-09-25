@@ -1,0 +1,30 @@
+
+
+
+header {
+    display: flex;
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../image/photo_2023-09-24_11-29-11.jpg);
+    color: white;
+    
+}
+
+.title {
+    background: #0000009c;
+    width: 700px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top: 90px;
+    padding: 20px 10px;
+    h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+    }
+    p {
+        font-size: 20px;
+    }
+}
