@@ -1,0 +1,65 @@
+
+
+header{
+    height: 750px;
+    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    .contact-box {
+        position: absolute;
+        border-top: 10px solid rgba(83, 80, 80, 0.493);
+        border-bottom: 10px solid rgba(83, 80, 80, 0.493);
+        margin-left: 650px;
+        margin-top: 30px;
+        h3{
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        
+    }
+}
+.title{
+    width: 600px;
+    padding-left: 100px;
+    margin-top: 170px;
+    margin-right: 70px;
+    
+    h1{
+        font-size: 60px;
+        font-weight: bolder;
+        
+    }
+    span {
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+        margin-top: -10px;
+    }
+    p{
+        width: 500px;
+    }
+    h1, h3, p{
+        color: white;
+    }
+}
+
+.pic>img{
+    margin-top: 170px;
+    margin-left: 70px;
+    width: 540px;
+    box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
+    
+}
+
+button{
+    margin-top: 25px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background: #DB3E34;
+    color: white;
+    border: none;
+}
