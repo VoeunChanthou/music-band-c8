@@ -1,15 +1,21 @@
 @import './components/nav';
+@import './components/componemts-about/header';
+@import './components/componemts-about/team-picture';
+@import './components/componemts-about/team-member';
+@import './components/footer';
 
 
 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Saira', sans-serif;
 }
+
 .container {
     width: 1512px;
     height: auto;
@@ -23,3 +29,46 @@ body {
 p {
     font-size: 20px;
 }
+
+.history-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #B7B7B7;
+    height: 350px;
+    h2{
+        font-size: 33px;
+        color: #DB3E34;
+        margin-top: 60px;
+        font-weight: bolder;
+    }
+    .history{
+        margin: 20px 170px;
+        padding: 20px;
+    }
+}
+
+.about-viewer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(165, 185, 193, 0.87);
+    height: 300px;
+    .view h1{
+        font-weight: bolder;
+        font-size: 40px;
+        margin: 10px 170px;
+        margin-top: 85px;
+        text-align: center;
+        
+        p{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 33px;
+        }
+    }
+
+}
+
+
+

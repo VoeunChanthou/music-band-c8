@@ -1,0 +1,72 @@
+
+
+
+
+
+
+
+
+.team-member{
+    padding-top: 50px;
+    background: #000000e7;
+    height: 650px;
+    h2{
+        font-size: 33px;
+        color: #DB3E34;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+    }
+    .card-content{
+        display: flex;
+        justify-content: space-between;
+        height: 430px;
+        margin: 30px 70px;
+        .card{
+            width: 30%;
+            background-color: #3d3b3bc2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            padding: 20px 10px;
+            h3{
+                color: white;
+                margin-top: 15px;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+            p{
+                color: white;
+                text-align: center;
+                margin: 20px;
+            }
+            .pl{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-size: cover;
+            
+            }
+            .pl:nth-child(1) {
+                background-image: url(../image/member1.jpg);
+            }
+        }
+        .card:nth-child(2) {
+            .pl {
+                background-image: url(../image/member2.jpg);
+                background-position: top;
+            }
+        }
+        .card:nth-child(3) {
+            .pl {
+                background-image: url(../image/member3.jpg);
+            }
+        }
+        
+    }
+
+
+}
