@@ -1,0 +1,199 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    // ---nav---/
+    .logo {
+        margin-left: 40px;
+        width: 400px;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    ul {
+        width: 400px;
+        margin-right: 40px;
+    }
+
+    li a {
+        font-size: 17px;
+
+    }
+
+    //---header-------/
+    .title {
+        width: 500px;
+        height: 250px;
+        margin-left: 40px;
+        padding: 10px 10px;
+
+        h1 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    // ----our-business----/
+    .business {
+        margin-top: 50px;
+        width: 60%;
+        height: 360px;
+        margin-left: 40px;
+
+        h2 {
+            font-size: 27px;
+        }
+
+        .business-button {
+            margin-top: 30px;
+
+            button {
+                width: 130px;
+                height: 30px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .business-image {
+        width: 30%;
+        height: 300px;
+        margin-left: 20px;
+        margin-right: 40px;
+
+        .image {
+            height: 260px;
+        }
+    }
+
+    // ----partnership-----/
+    .parthners-ship {
+        .partners {
+            h2 {
+                font-size: 27px;
+            }
+        }
+
+        .group-card {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 40px;
+
+            .card {
+                width: 30%;
+
+                h3 {
+                    font-size: 36px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    // ----our-audience---//
+    .audience {
+        .our-audience {
+            h2 {
+                font-size: 27px;
+            }
+        }
+
+        .text-audience {
+            margin: 80px 40px;
+            padding: 20px;
+            height: 150px;
+        }
+    }
+
+    // -----our-song---/
+    .our-song {
+        .song-title {
+            h2 {
+                font-size: 27px;
+            }
+        }
+
+        .group-song {
+            margin: 50px 40px;
+            padding: 20px 40px 40px 40px;
+
+            .song-card {
+                label {
+                    font-size: 18px;
+                }
+            }
+
+            button {
+                margin-top: 40px;
+                width: 130px;
+                height: 30px;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    // ----album---/
+    .new-album {
+        height: 1000px;
+
+        .new {
+            margin-top: 130px;
+
+            h2 {
+                font-size: 27px;
+            }
+        }
+
+        .album-text {
+            margin: 10px 40px;
+            padding: 20px;
+        }
+
+        .album {
+            height: 530px;
+            margin: 50px 40px;
+
+            .album-card {
+                width: 35%;
+
+                .album-img,
+                .album-img1,
+                .album-img2 {
+                    width: 220px;
+                    height: 200px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    margin: 10px 50px;
+                    font-size: 19px;
+                }
+
+                button {
+                    align-self: center;
+                    margin-top: 20px;
+                    margin-top: 40px;
+                    width: 130px;
+                    height: 30px;
+                    font-size: 15px;
+
+                }
+            }
+
+        }
+    }
+}
