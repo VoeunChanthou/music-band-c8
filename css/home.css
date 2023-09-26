@@ -469,4 +469,145 @@ body {
 
 p {
   font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+  }
+  .logo {
+    margin-left: 40px;
+    width: 400px;
+  }
+  .logo h1 {
+    font-size: 24px;
+  }
+  ul {
+    width: 400px;
+    margin-right: 40px;
+  }
+  li a {
+    font-size: 17px;
+  }
+  .title {
+    width: 500px;
+    height: 250px;
+    margin-left: 40px;
+    padding: 10px 10px;
+  }
+  .title h1 {
+    font-size: 45px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .business {
+    margin-top: 50px;
+    width: 60%;
+    height: 360px;
+    margin-left: 40px;
+  }
+  .business h2 {
+    font-size: 27px;
+  }
+  .business .business-button {
+    margin-top: 30px;
+  }
+  .business .business-button button {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .business-image {
+    width: 30%;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .business-image .image {
+    height: 260px;
+  }
+  .parthners-ship .partners h2 {
+    font-size: 27px;
+  }
+  .parthners-ship .group-card {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+  .parthners-ship .group-card .card {
+    width: 30%;
+  }
+  .parthners-ship .group-card .card h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .audience .our-audience h2 {
+    font-size: 27px;
+  }
+  .audience .text-audience {
+    margin: 80px 40px;
+    padding: 20px;
+    height: 150px;
+  }
+  .our-song .song-title h2 {
+    font-size: 27px;
+  }
+  .our-song .group-song {
+    margin: 50px 40px;
+    padding: 20px 40px 40px 40px;
+  }
+  .our-song .group-song .song-card label {
+    font-size: 18px;
+  }
+  .our-song .group-song button {
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .new-album {
+    height: 1000px;
+  }
+  .new-album .new {
+    margin-top: 130px;
+  }
+  .new-album .new h2 {
+    font-size: 27px;
+  }
+  .new-album .album-text {
+    margin: 10px 40px;
+    padding: 20px;
+  }
+  .new-album .album {
+    height: 530px;
+    margin: 50px 40px;
+  }
+  .new-album .album .album-card {
+    width: 35%;
+  }
+  .new-album .album .album-card .album-img,
+  .new-album .album .album-card .album-img1,
+  .new-album .album .album-card .album-img2 {
+    width: 220px;
+    height: 200px;
+  }
+  .new-album .album .album-card h4 {
+    font-size: 18px;
+  }
+  .new-album .album .album-card p {
+    margin: 10px 50px;
+    font-size: 19px;
+  }
+  .new-album .album .album-card button {
+    align-self: center;
+    margin-top: 20px;
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=home.css.map */
