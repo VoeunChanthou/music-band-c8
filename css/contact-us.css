@@ -61,7 +61,7 @@ header .contact-box {
   position: absolute;
   border-top: 10px solid rgba(83, 80, 80, 0.493);
   border-bottom: 10px solid rgba(83, 80, 80, 0.493);
-  margin-left: 650px;
+  margin-left: 50%;
   margin-top: 30px;
 }
 header .contact-box h3 {
@@ -216,7 +216,7 @@ footer .our-social .our h5 a {
 footer .copyright {
   position: absolute;
   margin-top: 540px;
-  margin-left: 450px;
+  margin-left: 30%;
 }
 
 * {
@@ -226,7 +226,7 @@ footer .copyright {
 }
 
 .container {
-  width: 1512px;
+  width: 100%;
   height: auto;
 }
 
