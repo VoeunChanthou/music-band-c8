@@ -14,14 +14,6 @@
         margin-left: 70px;
         h2 {
             color: $main-color;
-            text: {
-                transform: uppercase;
-                decoration: underline;
-            }
-            font: {
-                size: 33px;
-                weight: bolder;
-            }
             margin-bottom: 30px;
         }
     
@@ -29,6 +21,9 @@
             margin-top: 30px;
             button {
                 @include button;
+            }
+            button:hover {
+                @include button-hover;
             }
         } 
     }

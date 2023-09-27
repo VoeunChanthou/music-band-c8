@@ -14,12 +14,7 @@
         text-align: center;
 
         h2 {
-            font: {
-                size: 33px;
-                weight: bolder;
-            }
             color: $white;
-            text-decoration: underline;
         }
     }
 
@@ -78,6 +73,9 @@
                 align-self: center;
                 margin-top: 20px;
                 @include button;
+            }
+            button:hover {
+                @include button-hover;
             }
         }
 

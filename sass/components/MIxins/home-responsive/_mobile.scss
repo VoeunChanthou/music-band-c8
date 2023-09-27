@@ -105,7 +105,7 @@
 
                 h3 {
                     font: {
-                        size: 60px;
+                        size: 40px;
                     }
                 }
             }
@@ -139,7 +139,7 @@
                 .box {
                     display: grid;
                     grid-template-rows: 4fr 1fr;
-                    height: 360px;
+                    height: 270px;
                     border-radius: 10px;
 
                     .song-img {
@@ -170,10 +170,9 @@
             justify-items: center;
             row-gap: 50px;
             .album-card {
-                width: 80%;
-                height: 550px;
+                width: 70%;
+                height: 500px;
                 border-radius: 10px;
-                background: rgba(27, 27, 27, 0.363);
                 .album-img, .album-img1, .album-img2 {
                     margin-top: 30px;
                     width: 80%;
@@ -191,21 +190,55 @@
             }
         }
     }
-
+    //  -----footer-----/
     footer {
+        padding-left: 0;
+        padding-right: 0;
         display: grid;
-        grid-template-rows: 1fr 2fr 3fr;
+        grid-template-rows: 1fr 2fr 2fr;
         justify-items: center;
         .about-footer, .our-social {
-            width: 70%;
+            width: 90%;
             text-align: center;
         }
         .about-footer {
             margin-left: 0;
+            ul {
+                align-items: center;
+                li {
+                    list-style-type: none;
+                }
+            }
+            h3 {
+                margin: 0;
+                font-size: 33px;
+            }
+        }
+        .our-social {
+            .our {
+                margin-left: 0;
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 1fr;
+                justify-items: center;
+                column-gap: 20px;
+                a {
+                    display: none;
+                }
+                h5 {
+                    i {
+                        font-size: 45px;
+                    }
+                    i:hover {
+                        color: blue;
+                    }
+                }
+            }
         }
         .copyright {
-            margin-top: 1100px;
-            margin-left: 20px;
+            margin-top: 900px;
+            margin-left: 5px;
         }
     }
 }

@@ -58,6 +58,9 @@
             margin-top: 25px;
             @include button;
         }
+        button:hover {
+            @include button-hover;
+        }
     }
 
 }

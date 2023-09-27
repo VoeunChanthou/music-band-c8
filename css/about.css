@@ -60,24 +60,25 @@ header .header-img-about {
   justify-content: end;
   width: 550px;
   height: 400px;
+  margin-right: 70px;
 }
 header .header-img-about img {
   width: 480px;
   position: absolute;
-  margin-right: 70px;
-  margin-top: 60px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 header .header-img-about .bg-img-header {
-  width: 480px;
-  height: 300px;
-  border: 15px solid #DB3E34;
+  width: 450px;
+  height: 280px;
+  border: 15px solid rgba(219, 63, 52, 0.4941176471);
 }
 header .content-header {
   display: flex;
   flex-direction: column;
   padding: 10px;
   width: 500px;
-  height: 400px;
+  height: 420px;
   background-color: rgba(0, 0, 0, 0.534);
   border-radius: 15px;
 }
@@ -88,7 +89,7 @@ header .content-header h1 {
   margin-bottom: 30px;
 }
 header .content-header p {
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 
 .team-picture {
@@ -116,6 +117,9 @@ header .content-header p {
   height: 70%;
   border-radius: 15px;
   background-size: cover;
+}
+.team-picture .img-team .picture:hover {
+  box-shadow: rgba(207, 47, 47, 0.541) 0px 54px 55px, rgba(192, 29, 29, 0.377) 0px -12px 30px, rgba(199, 43, 43, 0.37) 0px 4px 6px, rgba(184, 46, 46, 0.575) 0px 12px 13px, rgba(189, 44, 44, 0.596) 0px -3px 5px;
 }
 .team-picture .img-team .picture:nth-child(1) {
   background-image: url(../image/photo1.jpg);
@@ -148,6 +152,9 @@ header .content-header p {
   justify-content: space-between;
   height: 430px;
   margin: 30px 70px;
+}
+.team-member .card-content .card:hover {
+  box-shadow: rgba(214, 34, 22, 0.4) 5px 5px, rgba(204, 29, 23, 0.3) 10px 10px, rgba(197, 44, 24, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .team-member .card-content .card {
   width: 30%;
@@ -319,6 +326,9 @@ footer .our-social .our h5 a {
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+footer .our-social .our h5:hover {
+  color: blue;
 }
 footer .copyright {
   position: absolute;

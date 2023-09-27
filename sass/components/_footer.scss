@@ -94,7 +94,6 @@ footer {
             font-size: 30px;
             text-decoration: underline;
         }
-
         .our {
             @include df-fd;
             height: 70%;
@@ -117,6 +116,9 @@ footer {
                     text-decoration: none;
                     color: $white;
                 }
+            }
+            h5:hover {
+                color: blue;
             }
         }
     }

@@ -82,10 +82,6 @@ header {
 }
 .our-business .business h2 {
   color: #DB3E34;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 33px;
-  font-weight: bolder;
   margin-bottom: 30px;
 }
 .our-business .business .business-button {
@@ -99,6 +95,11 @@ header {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  border: 3px solid #DB3E34;
+}
+.our-business .business .business-button button:hover {
+  background: none;
+  color: #DB3E34;
 }
 .our-business .business-image {
   display: flex;
@@ -133,6 +134,9 @@ header {
   height: 260px;
   display: flex;
   justify-content: space-between;
+}
+.parthners-ship .group-card .card:hover {
+  box-shadow: rgba(214, 34, 22, 0.4) 5px 5px, rgba(204, 29, 23, 0.3) 10px 10px, rgba(197, 44, 24, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .parthners-ship .group-card .card {
   background: rgba(73, 64, 64, 0.4235294118);
@@ -236,6 +240,11 @@ header {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  border: 3px solid #DB3E34;
+}
+.our-song .group-song button:hover {
+  background: none;
+  color: #DB3E34;
 }
 
 .new-album {
@@ -250,10 +259,7 @@ header {
   text-align: center;
 }
 .new-album .new h2 {
-  font-size: 33px;
-  font-weight: bolder;
   color: white;
-  text-decoration: underline;
 }
 .new-album .album-text {
   margin: 10px 70px;
@@ -313,6 +319,11 @@ header {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  border: 3px solid #DB3E34;
+}
+.new-album .album .album-card button:hover {
+  background: none;
+  color: #DB3E34;
 }
 
 footer {
@@ -410,6 +421,9 @@ footer .our-social .our h5 a {
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+footer .our-social .our h5:hover {
+  color: blue;
 }
 footer .copyright {
   position: absolute;
@@ -727,7 +741,7 @@ p {
     padding-top: 100px;
   }
   .parthners-ship .group-card .card h3 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .audience .text-audience {
     margin: 80px 20px;
@@ -747,7 +761,7 @@ p {
   .our-song .group-song .song-card .box {
     display: grid;
     grid-template-rows: 4fr 1fr;
-    height: 360px;
+    height: 270px;
     border-radius: 10px;
   }
   .our-song .group-song .song-card .box .song-img {
@@ -772,10 +786,9 @@ p {
     row-gap: 50px;
   }
   .new-album .album .album-card {
-    width: 80%;
-    height: 550px;
+    width: 70%;
+    height: 500px;
     border-radius: 10px;
-    background: rgba(27, 27, 27, 0.363);
   }
   .new-album .album .album-card .album-img, .new-album .album .album-card .album-img1, .new-album .album .album-card .album-img2 {
     margin-top: 30px;
@@ -792,19 +805,50 @@ p {
     font-size: 30px;
   }
   footer {
+    padding-left: 0;
+    padding-right: 0;
     display: grid;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
     justify-items: center;
   }
   footer .about-footer, footer .our-social {
-    width: 70%;
+    width: 90%;
     text-align: center;
   }
   footer .about-footer {
     margin-left: 0;
   }
+  footer .about-footer ul {
+    align-items: center;
+  }
+  footer .about-footer ul li {
+    list-style-type: none;
+  }
+  footer .about-footer h3 {
+    margin: 0;
+    font-size: 33px;
+  }
+  footer .our-social .our {
+    margin-left: 0;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  footer .our-social .our a {
+    display: none;
+  }
+  footer .our-social .our h5 i {
+    font-size: 45px;
+  }
+  footer .our-social .our h5 i:hover {
+    color: blue;
+  }
   footer .copyright {
-    margin-top: 1100px;
-    margin-left: 20px;
+    margin-top: 900px;
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=home.css.map */
