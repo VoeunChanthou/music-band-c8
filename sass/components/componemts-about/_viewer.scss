@@ -1,4 +1,5 @@
-
+@import '../variable';
+@import '../group-mixins';
 
 
 
@@ -8,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: rgba(165, 185, 193, 0.87);
+    background-color: $card-song;
     height: 300px;
     .view h1{
         font-weight: bolder;
