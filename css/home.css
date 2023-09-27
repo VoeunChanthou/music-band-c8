@@ -10,6 +10,9 @@ nav {
   top: 0;
   z-index: 100;
 }
+nav .menu {
+  display: none;
+}
 nav .logo {
   width: 300px;
   display: flex;
@@ -639,7 +642,169 @@ p {
   }
 }
 @media (max-width: 720px) {
-  nav {
-    background: red;
+  nav .logo {
+    margin-left: 20px;
+  }
+  nav ul {
+    position: absolute;
+    transition: 0.5s;
+    left: -100%;
+    top: 70px;
+    background: #181717;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  nav #menu_check:checked ~ ul {
+    left: 0;
+    transition: 0.4s;
+  }
+  nav .menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  nav .menu i {
+    font-size: 50px;
+  }
+  nav .menu:hover {
+    color: #DB3E34;
+  }
+  .title {
+    width: 400px;
+    height: 260px;
+    margin-left: 20px;
+  }
+  .our-business .business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    height: auto;
+    text-align: center;
+  }
+  .our-business .business .business-button {
+    align-self: flex-end;
+    margin-top: 70px;
+    margin-right: 20px;
+  }
+  .our-business .business .business-button button {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .our-business .business-image {
+    display: none;
+  }
+  .parthners-ship {
+    height: auto;
+  }
+  .parthners-ship .partners {
+    padding-top: 30px;
+    margin-top: 0;
+    background: #3a3a3a;
+  }
+  .parthners-ship .group-card {
+    margin: 40px 20px 30px 20px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+  .parthners-ship .group-card .card {
+    width: 70%;
+    height: 400px;
+    padding-top: 100px;
+  }
+  .parthners-ship .group-card .card h3 {
+    font-size: 60px;
+  }
+  .audience .text-audience {
+    margin: 80px 20px;
+  }
+  .our-song .group-song {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+    padding: 0;
+    background: #363636;
+  }
+  .our-song .group-song .song-card label {
+    display: none;
+  }
+  .our-song .group-song .song-card .box {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    height: 360px;
+    border-radius: 10px;
+  }
+  .our-song .group-song .song-card .box .song-img {
+    width: 100%;
+    height: 100%;
+    background: url(../../../../image/suffer-band.webp);
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .our-song .group-song .song-card .box .song-img img {
+    display: none;
+  }
+  .new-album {
+    height: auto;
+  }
+  .new-album .album {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 50px;
+  }
+  .new-album .album .album-card {
+    width: 80%;
+    height: 550px;
+    border-radius: 10px;
+    background: rgba(27, 27, 27, 0.363);
+  }
+  .new-album .album .album-card .album-img, .new-album .album .album-card .album-img1, .new-album .album .album-card .album-img2 {
+    margin-top: 30px;
+    width: 80%;
+    height: 90%;
+  }
+  .new-album .album .album-card button {
+    margin-bottom: 40px;
+    width: 135px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .new-album .album .album-card h4 {
+    font-size: 30px;
+  }
+  footer {
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    justify-items: center;
+  }
+  footer .about-footer, footer .our-social {
+    width: 70%;
+    text-align: center;
+  }
+  footer .about-footer {
+    margin-left: 0;
+  }
+  footer .copyright {
+    margin-top: 1100px;
+    margin-left: 20px;
   }
 }/*# sourceMappingURL=home.css.map */
