@@ -1,45 +1,54 @@
+@import '../variable';
+@import '../group-mixins';
 
 
 
-
-.team-picture{
-    display: flex;
-    flex-direction: column;
+.team-picture {
+    @include df-fd;
     background-color: #474545;
     height: 600px;
-    h2{
-        font-size: 33px;
-        color: #DB3E34;
+
+    h2 {
         margin-top: 60px;
-        font-weight: bolder;
+        color: $main-color;
+
+        font: {
+            size: 33px;
+            weight: bolder;
+        }
+
         text-align: center;
     }
-    .img-team{
-        display: flex;
-        justify-content: space-between;
+
+    .img-team {
+        @include df-fd;
         align-items: center;
         height: 400px;
-        // background: #9c8684;
         margin: 30px 70px;
-        .picture{
+
+        .picture {
             width: 23%;
             height: 70%;
             border-radius: 15px;
             background-size: cover;
 
         }
+
         .picture:nth-child(1) {
             background-image: url(../image/photo1.jpg);
         }
+
         .picture:nth-child(2) {
             background-image: url(../image/photo2.jpg);
         }
+
         .picture:nth-child(3) {
             background-image: url(../image/photo-3.jpg);
         }
+
         .picture:nth-child(4) {
             background-image: url(../image/photo4.jpg);
         }
-        
+
     }
 }
