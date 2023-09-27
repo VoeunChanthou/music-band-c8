@@ -95,15 +95,15 @@ header .content-header p {
   height: 600px;
 }
 .team-picture h2 {
-  font-size: 33px;
-  color: #DB3E34;
   margin-top: 60px;
+  color: #DB3E34;
+  font-size: 33px;
   font-weight: bolder;
   text-align: center;
 }
 .team-picture .img-team {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   height: 400px;
   margin: 30px 70px;
@@ -133,10 +133,10 @@ header .content-header p {
   height: 650px;
 }
 .team-member h2 {
-  font-size: 33px;
   color: #DB3E34;
   text-align: center;
   font-weight: bolder;
+  font-size: 33px;
   margin-top: 20px;
   margin-bottom: 50px;
 }
