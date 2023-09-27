@@ -447,19 +447,12 @@ p {
   p {
     font-size: 18px;
   }
-  .logo {
+  nav .logo {
     margin-left: 40px;
-    width: 400px;
   }
-  .logo h1 {
-    font-size: 24px;
-  }
-  ul {
-    width: 400px;
+  nav ul {
     margin-right: 40px;
-  }
-  li a {
-    font-size: 17px;
+    width: 400px;
   }
   .title {
     width: 500px;
@@ -473,30 +466,30 @@ p {
   .title p {
     font-size: 18px;
   }
-  .business {
+  .our-business .business {
     margin-top: 50px;
     width: 60%;
     height: 360px;
     margin-left: 40px;
   }
-  .business h2 {
+  .our-business .business h2 {
     font-size: 27px;
   }
-  .business .business-button {
+  .our-business .business .business-button {
     margin-top: 30px;
   }
-  .business .business-button button {
+  .our-business .business .business-button button {
     width: 130px;
     height: 30px;
     font-size: 15px;
   }
-  .business-image {
+  .our-business .business-image {
     width: 30%;
     height: 300px;
     margin-left: 20px;
     margin-right: 40px;
   }
-  .business-image .image {
+  .our-business .business-image .image {
     height: 260px;
   }
   .parthners-ship .partners h2 {
@@ -578,5 +571,75 @@ p {
     width: 130px;
     height: 30px;
     font-size: 15px;
+  }
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 200px;
+  }
+  footer .suffer-footer {
+    width: 100%;
+    align-items: center;
+  }
+  footer .suffer-footer .contact-footer {
+    display: none;
+  }
+  footer .suffer-footer .text-footer {
+    text-align: center;
+  }
+  footer .suffer-footer .logo-footer img {
+    width: 50px;
+  }
+  footer .suffer-footer .logo-footer h3 {
+    font-size: 27px;
+  }
+  footer .about-footer {
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 100px;
+  }
+  footer .about-footer h3 {
+    font-size: 27px;
+  }
+  footer .about-footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .about-footer ul li {
+    font-size: 18px;
+  }
+  footer .our-social {
+    width: 40%;
+    margin-top: 100px;
+  }
+  footer .our-social h3 {
+    font-size: 27px;
+  }
+  footer .our-social .our {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  footer .our-social .our h5 {
+    margin-top: 20px;
+  }
+  footer .our-social .our h5 i {
+    margin-right: 20px;
+    font-size: 23px;
+  }
+  footer .our-social .our h5 a {
+    font-weight: 300;
+    font-size: 19px;
+  }
+  footer .copyright {
+    margin-top: 650px;
+    margin-left: 200px;
+  }
+}
+@media (max-width: 720px) {
+  nav {
+    background: red;
   }
 }/*# sourceMappingURL=home.css.map */

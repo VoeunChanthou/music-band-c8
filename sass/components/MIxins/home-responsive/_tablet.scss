@@ -8,23 +8,15 @@
     }
 
     // ---nav---/
-    .logo {
-        margin-left: 40px;
-        width: 400px;
-
-        h1 {
-            font-size: 24px;
+    nav {
+        .logo {
+            margin-left: 40px;
         }
-    }
 
-    ul {
-        width: 400px;
-        margin-right: 40px;
-    }
-
-    li a {
-        font-size: 17px;
-
+        ul {
+            margin-right: 40px;
+            width: 400px;
+        }
     }
 
     //---header-------/
@@ -44,37 +36,40 @@
     }
 
     // ----our-business----/
-    .business {
-        margin-top: 50px;
-        width: 60%;
-        height: 360px;
-        margin-left: 40px;
+    .our-business {
+        .business {
+            margin-top: 50px;
+            width: 60%;
+            height: 360px;
+            margin-left: 40px;
 
-        h2 {
-            font-size: 27px;
+            h2 {
+                font-size: 27px;
+            }
+
+            .business-button {
+                margin-top: 30px;
+
+                button {
+                    width: 130px;
+                    height: 30px;
+                    font-size: 15px;
+                }
+            }
         }
 
-        .business-button {
-            margin-top: 30px;
+        .business-image {
+            width: 30%;
+            height: 300px;
+            margin-left: 20px;
+            margin-right: 40px;
 
-            button {
-                width: 130px;
-                height: 30px;
-                font-size: 15px;
+            .image {
+                height: 260px;
             }
         }
     }
 
-    .business-image {
-        width: 30%;
-        height: 300px;
-        margin-left: 20px;
-        margin-right: 40px;
-
-        .image {
-            height: 260px;
-        }
-    }
 
     // ----partnership-----/
     .parthners-ship {
@@ -194,5 +189,84 @@
             }
 
         }
+    }
+
+    // -----footer-----/
+
+    footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 200px;
+        .suffer-footer {
+            width: 100%;
+            align-items: center;
+            .contact-footer {
+                display: none;
+            }
+            .text-footer {
+                text-align: center;
+            }
+            .logo-footer {
+                img {
+                    width: 50px;
+                }
+                h3 {
+                    font-size: 27px;
+                }
+            }
+        }
+        .about-footer {
+            width: 30%;
+            margin-left: 15%;
+            margin-top: 100px;
+    
+            h3 {
+                font-size: 27px;
+            }
+    
+            ul {
+                width: 100%;
+                @include df-fd;
+                align-items: start;
+    
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+        .our-social {
+            width: 40%;
+            margin-top: 100px;
+    
+            h3 {
+                font-size: 27px;
+            }
+    
+            .our {
+                @include df-fd;
+                height: auto;
+    
+                h5 {
+                    margin-top: 20px;
+    
+                    i {
+                        margin-right: 20px;
+                        font-size: 23px;
+                    }
+    
+                    a {
+                        font: {
+                            weight: 300;
+                            size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin-top: 650px;
+            margin-left: 200px;
+        }
+    
     }
 }
