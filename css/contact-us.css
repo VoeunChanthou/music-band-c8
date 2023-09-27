@@ -343,4 +343,151 @@ p {
   border: none;
   border-radius: 13px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+  }
+  nav .logo {
+    margin-left: 40px;
+  }
+  nav ul {
+    margin-right: 40px;
+    width: 400px;
+  }
+  header {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  header .pic > img {
+    width: 450px;
+    margin-top: 10px;
+    margin-right: 110px;
+    margin-bottom: 100px;
+  }
+  header .title {
+    margin-top: 100px;
+    width: 400px;
+  }
+  header .title span {
+    text-align: center;
+    margin-left: 120px;
+  }
+  header .title h1,
+  header .title p {
+    text-align: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+  header .title p {
+    width: 90%;
+  }
+  header .title button {
+    margin-left: 100px;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+  header .contact-box {
+    position: absolute;
+    top: 120px;
+    margin: auto;
+  }
+  .contain-header {
+    flex-direction: column;
+    height: auto;
+  }
+  .contain-header .title2 {
+    width: 90%;
+    align-self: center;
+  }
+  .contain-header #create {
+    width: 500px;
+    align-self: center;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+  }
+  .contain-header .T2 {
+    align-items: center;
+    text-align: center;
+  }
+  .contain-header .T2 p {
+    margin-left: 200px;
+  }
+  .contain-header .box {
+    align-items: center;
+    background: rgba(109, 106, 106, 0.5960784314);
+    width: 400px;
+    margin-left: 160px;
+  }
+}
+footer {
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 200px;
+}
+footer .suffer-footer {
+  width: 100%;
+  align-items: center;
+}
+footer .suffer-footer .contact-footer {
+  display: none;
+}
+footer .suffer-footer .text-footer {
+  text-align: center;
+}
+footer .suffer-footer .logo-footer img {
+  width: 50px;
+}
+footer .suffer-footer .logo-footer h3 {
+  font-size: 27px;
+}
+footer .about-footer {
+  width: 30%;
+  margin-left: 15%;
+  margin-top: 100px;
+}
+footer .about-footer h3 {
+  font-size: 27px;
+}
+footer .about-footer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .about-footer ul li {
+  font-size: 18px;
+}
+footer .our-social {
+  width: 40%;
+  margin-top: 100px;
+}
+footer .our-social h3 {
+  font-size: 27px;
+}
+footer .our-social .our {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+footer .our-social .our h5 {
+  margin-top: 20px;
+}
+footer .our-social .our h5 i {
+  margin-right: 20px;
+  font-size: 23px;
+}
+footer .our-social .our h5 a {
+  font-weight: 300;
+  font-size: 19px;
+}
+footer .copyright {
+  margin-top: 650px;
+  margin-left: 200px;
 }/*# sourceMappingURL=contact-us.css.map */

@@ -1,0 +1,28 @@
+@import '../variable';
+@import '../group-mixins';
+
+
+
+
+
+.about-viewer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: $card-song;
+    height: 300px;
+    .view h1{
+        font-weight: bolder;
+        font-size: 40px;
+        margin: 10px 170px;
+        margin-top: 85px;
+        text-align: center;
+        
+        p{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 33px;
+        }
+    }
+
+}
