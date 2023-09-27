@@ -637,4 +637,9 @@ p {
     margin-top: 650px;
     margin-left: 200px;
   }
+}
+@media (max-width: 720px) {
+  nav {
+    background: red;
+  }
 }/*# sourceMappingURL=home.css.map */
