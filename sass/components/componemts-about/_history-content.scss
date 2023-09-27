@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+.history-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #B7B7B7;
+    height: 350px;
+    h2{
+        font-size: 33px;
+        color: #DB3E34;
+        margin-top: 60px;
+        font-weight: bolder;
+    }
+    .history{
+        margin: 20px 170px;
+        padding: 20px;
+    }
+}
