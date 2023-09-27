@@ -1,3 +1,5 @@
+@import './group-mixins';
+@import './variable';
 
 
 
@@ -5,34 +7,25 @@
 .audience {
     height: 500px;
     background: url(../image/photo_2023-09-19_08-25-55.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
+    @include bg-img;
+    @include df-aic;
     flex-direction: column;
-    align-items: center;
     .our-audience {
-        background: rgba(0, 0, 0, 0.534);
+        background: $audience-bg;
         width: 290px;
         margin-top: 60px;
         text-align: center;
         h2 {
-            font-size: 33px;
-            font-weight: bolder;
-            text-transform: uppercase;
-            color: white;
+            color: $white;
         }
     }
     .text-audience {
-        margin: 80px 70px;
-        padding: 40px;
+        background: $audience-bg;
         height: 200px;
-        background: rgba(0, 0, 0, 0.39);
-        color: white;
+        padding: 40px;
+        margin: 80px 70px;
+        color: $white;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        @include df-jcc-aic;
     }
 }

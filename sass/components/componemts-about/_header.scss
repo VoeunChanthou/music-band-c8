@@ -1,16 +1,18 @@
-
+@import '../variable';
+@import '../group-mixins';
 
 
 
 
 header {
     padding: 80px 70px;
-    color: white;
     height: 550px;
-    background-image: url(../image/about-bg-1.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
+    background: {
+        image: url(../image/about-bg-1.jpg);
+        size: cover;
+    }
+    @include df-jcsb;
+    color: $white;
     .header-img-about{
         display: flex;
         justify-content: end;
@@ -19,26 +21,29 @@ header {
         img{
             width: 480px;
             position: absolute;
-            margin-right: 70px;
-            margin-top: 60px;
+            margin: {
+                right: 70px;
+                top: 60px;
+            }
         }
         .bg-img-header{
             width: 480px;
             height: 300px;
-            border: 15px solid #db3f3486;
+            border: 15px solid $main-color;
         }
     }
     .content-header{
-        display: flex;
-        flex-direction: column;
+        @include df-fd;
         padding: 10px;
         width: 500px;
         height: 400px;
-        background-color: rgba(61, 61, 61, 0.502);
+        background-color: $audience-bg;
         border-radius: 15px;
         h1{
-            font-size: 55px;
-            font-weight: bolder;
+            font: {
+                size: 55px;
+                weight: bolder;
+            }
             align-self:  center;
             margin-bottom: 30px;
         }

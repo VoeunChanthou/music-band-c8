@@ -1,3 +1,5 @@
+@import './components/variable';
+@import './components/group-mixins';
 @import './components/nav';
 @import './components/contact-mixin/header';
 @import './components/footer';
@@ -33,13 +35,12 @@ p {
 
 .title2 {
     width: 50%;
-    color: white;
+    color: $white;
     margin-top: 70px;
 
     .box {
         margin-top: 30px;
-        display: flex;
-        flex-direction: column;
+        @include df-fd;
 
         .number-phone {
             display: flex;
@@ -74,86 +75,95 @@ p {
 .contain-header {
     height: 750px;
     background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
+    @include bg-img;
+    @include df-jcsb;
     padding: 10px 70px;
-    justify-content: space-between;
 
-    .create {
-        margin-top: 90px;
-        background: rgba(48, 47, 47, 0.514);
+    #create {
+        background: $form-bg;
         width: 40%;
         height: 75%;
-        display: flex;
-        flex-direction: column;
+        @include df-fd;
         justify-content: space-evenly;
         align-items: center;
+        margin-top: 90px;
         border-radius: 20px;
 
         h1 {
             font-size: 33px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            color: white;
+
+            margin: {
+                top: 10px;
+                bottom: 20px;
+            }
+
+            color: $white;
             font-weight: bolder;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $white;
+        }
+
+        .icon-create>img {
+            width: 40px;
+
+            margin: {
+                top: 20px;
+                left: 13px;
+                right: 13px;
+            }
+        }
+
+        .name {
+            width: 90%;
+            @include df-jcsb;
+        }
+
+        input[type=text] {
+            padding: 9px;
+            width: 40%;
+            background: rgba(206, 206, 206, 0.664);
+        }
+
+        input[type=email],
+        input[type=password],
+        input[type=submit] {
+            width: 87%;
+            padding: 9px;
+            background: rgba(206, 206, 206, 0.664);
+        }
+
+        input[type=submit] {
+            background: $main-color;
+            color: $white;
+            border: 4px solid $main-color;
+            border-radius: 13px;
+
+            font: {
+                size: 16px;
+                weight: bolder;
+            }
+        }
+
+        input[type=submit]:hover {
+            background: none;
+            color: $main-color;
+            font-weight: bolder;
+        }
+
+        textarea {
+            width: 90%;
+            height: 75px;
+            background: rgba(206, 206, 206, 0.664);
+        }
+
+        textarea,
+        input[type=email],
+        [type=password],
+        input[type=text] {
+            outline: none;
+            border: none;
+            border-radius: 13px;
+            margin-bottom: 10px;
         }
 
     }
-}
-
-
-.icon-create>img {
-    margin-top: 20px;
-    margin-left: 13px;
-    margin-right: 13px;
-    width: 40px;
-}
-
-.name {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-input[type=text] {
-    border: none;
-    outline: none;
-    padding: 9px;
-    width: 40%;
-    border-radius: 13px;
-    background: rgba(185, 179, 179, 0.863);
-    margin-bottom: 10px;
-}
-
-input[type=email],
-[type=password],
-input[type=submit] {
-    width: 87%;
-    padding: 9px;
-    border-radius: 13px;
-    outline: none;
-    border: none;
-    background: rgba(185, 179, 179, 0.863);
-    margin-bottom: 10px;
-}
-input[type=submit] {
-    background: #DB3E34;
-    font-size: 16px;
-    color: white;
-    font-weight: bolder;
-}
-
-textarea {
-    width: 90%;
-    height: 75px;
-    border: none;
-    outline: none;
-    background: rgba(185, 179, 179, 0.863);
-    border-radius: 13px;
-}
-
-.create>button {
-    margin-bottom: 9px;
 }

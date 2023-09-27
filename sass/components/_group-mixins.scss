@@ -1,5 +1,3 @@
-
-
 @mixin df-jcc {
     display: flex;
     justify-content: center;
@@ -8,4 +6,47 @@
 @mixin df-jcc-aic {
     @include df-jcc;
     align-items: center;
+}
+
+@mixin df-aic {
+    display: flex;
+    align-items: center;
+}
+
+@mixin df-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin df-fd {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin bg-img {
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin main-title {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+@mixin album-img {
+    margin-top: 20px;
+    width: 300px;
+    height: 270px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+@mixin button {
+    width: 170px;
+    height: 35px;
+    background: $main-color;
+    color: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
 }
