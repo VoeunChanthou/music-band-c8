@@ -429,69 +429,69 @@ p {
     width: 400px;
     margin-left: 160px;
   }
-}
-footer {
-  flex-wrap: wrap;
-  height: auto;
-  padding-bottom: 200px;
-}
-footer .suffer-footer {
-  width: 100%;
-  align-items: center;
-}
-footer .suffer-footer .contact-footer {
-  display: none;
-}
-footer .suffer-footer .text-footer {
-  text-align: center;
-}
-footer .suffer-footer .logo-footer img {
-  width: 50px;
-}
-footer .suffer-footer .logo-footer h3 {
-  font-size: 27px;
-}
-footer .about-footer {
-  width: 30%;
-  margin-left: 15%;
-  margin-top: 100px;
-}
-footer .about-footer h3 {
-  font-size: 27px;
-}
-footer .about-footer ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-footer .about-footer ul li {
-  font-size: 18px;
-}
-footer .our-social {
-  width: 40%;
-  margin-top: 100px;
-}
-footer .our-social h3 {
-  font-size: 27px;
-}
-footer .our-social .our {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-footer .our-social .our h5 {
-  margin-top: 20px;
-}
-footer .our-social .our h5 i {
-  margin-right: 20px;
-  font-size: 23px;
-}
-footer .our-social .our h5 a {
-  font-weight: 300;
-  font-size: 19px;
-}
-footer .copyright {
-  margin-top: 650px;
-  margin-left: 200px;
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 200px;
+  }
+  footer .suffer-footer {
+    width: 100%;
+    align-items: center;
+  }
+  footer .suffer-footer .contact-footer {
+    display: none;
+  }
+  footer .suffer-footer .text-footer {
+    text-align: center;
+  }
+  footer .suffer-footer .logo-footer img {
+    width: 50px;
+  }
+  footer .suffer-footer .logo-footer h3 {
+    font-size: 27px;
+  }
+  footer .about-footer {
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 100px;
+  }
+  footer .about-footer h3 {
+    font-size: 27px;
+  }
+  footer .about-footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .about-footer ul li {
+    font-size: 18px;
+  }
+  footer .our-social {
+    width: 40%;
+    margin-top: 100px;
+  }
+  footer .our-social h3 {
+    font-size: 27px;
+  }
+  footer .our-social .our {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  footer .our-social .our h5 {
+    margin-top: 20px;
+  }
+  footer .our-social .our h5 i {
+    margin-right: 20px;
+    font-size: 23px;
+  }
+  footer .our-social .our h5 a {
+    font-weight: 300;
+    font-size: 19px;
+  }
+  footer .copyright {
+    margin-top: 650px;
+    margin-left: 200px;
+  }
 }/*# sourceMappingURL=contact-us.css.map */
