@@ -1,4 +1,4 @@
-@media (max-width: 720px) {
+@media (max-width: 600px) {
     nav {
         .logo {
             margin-left: 20px;
@@ -23,7 +23,7 @@
 
         #menu_check:checked~ul {
             left: 0;
-            transition: 0.4s;
+            transition: 0.5s;
         }
 
         .menu {
@@ -43,7 +43,7 @@
 
     // ----header---/
     .title {
-        width: 400px;
+        width: 300px;
         height: 260px;
         margin-left: 20px;
     }
@@ -192,17 +192,18 @@
     }
     //  -----footer-----/
     footer {
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
         display: grid;
         grid-template-rows: 1fr 2fr 2fr;
         justify-items: center;
         .about-footer, .our-social {
-            width: 90%;
+            width: 100%;
             text-align: center;
+            margin-left: 0;
         }
         .about-footer {
-            margin-left: 0;
             ul {
                 align-items: center;
                 li {
@@ -227,6 +228,7 @@
                     display: none;
                 }
                 h5 {
+                    width: 100%;
                     i {
                         font-size: 45px;
                     }
