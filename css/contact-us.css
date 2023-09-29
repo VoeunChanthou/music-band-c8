@@ -155,12 +155,32 @@ header .title {
   header .title {
     margin-top: 150px;
     margin-left: 40px;
-    width: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .title {
+    align-items: center;
+    width: 90%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
   }
 }
 header .title h1 {
   font-size: 60px;
   font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+  header .title h1 {
+    font-size: 40px;
+  }
 }
 header .title span {
   font-size: 40px;
@@ -171,12 +191,19 @@ header .title span {
 @media screen and (max-width: 1024px) {
   header .title span {
     text-align: center;
-    margin-left: 120px;
+    margin-left: 0;
   }
 }
 header .title p {
   color: white;
-  width: 500px;
+  width: 100%;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  header .title p {
+    font-size: 17px;
+    text-align: center;
+  }
 }
 header .title h1,
 header .title h3 {
@@ -187,7 +214,7 @@ header .title h3 {
   header .title h3 {
     text-align: center;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 0;
   }
 }
 header .title #button {
@@ -208,6 +235,12 @@ header .title #button {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 1024px) {
+  header .title #button {
+    width: 150px;
+    font-size: 15px;
+  }
+}
 header .title #button a {
   text-decoration: none;
   color: white;
@@ -215,10 +248,10 @@ header .title #button a {
 header .pic {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 header .pic img {
-  width: 540px;
+  width: 100%;
+  height: 50%;
   margin-top: 170px;
   margin-left: 70px;
   box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
@@ -562,39 +595,6 @@ p {
   font-size: 20px;
 }
 
-.title2 {
-  width: 50%;
-  color: white;
-  margin-top: 70px;
-}
-.title2 .box {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.title2 .box .number-phone {
-  display: flex;
-  margin-bottom: 10px;
-}
-.title2 .box .number-phone i {
-  font-size: 30px;
-  margin-right: 10px;
-}
-.title2 .box .email {
-  display: flex;
-}
-.title2 .box .email i {
-  font-size: 30px;
-  margin-right: 10px;
-}
-.title2 p {
-  width: 350px;
-}
-.title2 h1 {
-  font-size: 60px;
-  margin-bottom: 30px;
-}
-
 .contain-header {
   height: 750px;
   background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
@@ -603,6 +603,66 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 10px 70px;
+}
+@media screen and (max-width: 1024px) {
+  .contain-header {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contain-header {
+    padding: 0;
+  }
+}
+.contain-header .title2 {
+  width: 50%;
+  color: white;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1024px) {
+  .contain-header .title2 {
+    width: 70%;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contain-header .title2 {
+    width: 90%;
+  }
+}
+.contain-header .title2 .box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contain-header .title2 .box .number-phone {
+  display: flex;
+  margin-bottom: 10px;
+}
+.contain-header .title2 .box .number-phone i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contain-header .title2 .box .email {
+  display: flex;
+}
+.contain-header .title2 .box .email i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contain-header .title2 p {
+  width: 350px;
+}
+.contain-header .title2 h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .contain-header .title2 h1 {
+    font-size: 40px;
+    text-align: center;
+  }
 }
 .contain-header #create {
   background: rgba(48, 47, 47, 0.514);
@@ -614,6 +674,20 @@ p {
   align-items: center;
   margin-top: 90px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .contain-header #create {
+    width: 70%;
+    height: 600px;
+    align-self: center;
+    margin-bottom: 120px;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contain-header #create {
+    width: 90%;
+  }
 }
 .contain-header #create h1 {
   font-size: 33px;
@@ -634,10 +708,20 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+  .contain-header #create .name {
+    flex-direction: column;
+  }
+}
 .contain-header #create input[type=text] {
   padding: 9px;
   width: 40%;
   background: rgba(206, 206, 206, 0.664);
+}
+@media screen and (max-width: 600px) {
+  .contain-header #create input[type=text] {
+    width: 97%;
+  }
 }
 .contain-header #create input[type=email],
 .contain-header #create input[type=password],

@@ -33,53 +33,92 @@ p {
 
 
 
-.title2 {
-    width: 50%;
-    color: $white;
-    margin-top: 70px;
 
-    .box {
-        margin-top: 30px;
-        @include df-fd;
-
-        .number-phone {
-            display: flex;
-            margin-bottom: 10px;
-
-            i {
-                font-size: 30px;
-                margin-right: 10px;
-            }
-        }
-
-        .email {
-            display: flex;
-
-            i {
-                font-size: 30px;
-                margin-right: 10px;
-            }
-        }
-    }
-
-    p {
-        width: 350px;
-    }
-
-    h1 {
-        font-size: 60px;
-        margin-bottom: 30px;
-    }
-}
 
 .contain-header {
+
+    @include responsive ('tablet') {
+        flex-direction: column;
+        height: auto;
+    }
+
+    @include responsive ('Mobile') {
+        padding: 0;
+    }
+
     height: 750px;
-    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
+    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)),
+    url(../image/band1.jpg);
     @include bg-img;
     @include df-jcsb;
     padding: 10px 70px;
 
+    .title2 {
+        @include responsive ('tablet') {
+            width: 70%;
+            align-self: center;
+        }
+
+        @include responsive ('Mobile') {
+            width: 90%;
+        }
+
+        width: 50%;
+        color: $white;
+        margin-top: 70px;
+
+        .box {
+            margin-top: 30px;
+            @include df-fd;
+
+            .number-phone {
+                display: flex;
+                margin-bottom: 10px;
+
+                i {
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+
+            .email {
+                display: flex;
+
+                i {
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        p {
+            width: 350px;
+        }
+
+        h1 {
+            @include responsive ('Mobile') {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+    }
+
     #create {
+        @include responsive ('tablet') {
+            width: 70%;
+            height: 600px;
+            align-self: center;
+            margin-bottom: 120px;
+            padding-bottom: 25px;
+        }
+
+        @include responsive ('Mobile') {
+            width: 90%;
+        }
+
         background: $form-bg;
         width: 40%;
         height: 75%;
@@ -113,11 +152,19 @@ p {
         }
 
         .name {
+            @include responsive ('Mobile') {
+                flex-direction: column;
+            }
+
             width: 90%;
             @include df-jcsb;
         }
 
         input[type=text] {
+            @include responsive ('Mobile') {
+                width: 97%;
+            }
+
             padding: 9px;
             width: 40%;
             background: rgba(206, 206, 206, 0.664);
@@ -167,468 +214,3 @@ p {
 
     }
 }
-
-
-
-
-
-
-// @media (max-width: 1024px) {
-
-
-
-
-
-//     header {
-//         height: auto;
-//         flex-direction: column-reverse;
-//         justify-content: center;
-//         align-items: center;
-
-//         .pic>img {
-//             width: 450px;
-//             margin-top: 10px;
-//             margin-right: 110px;
-//             margin-bottom: 100px;
-//         }
-
-//         .title {
-//             margin-top: 100px;
-//             width: 400px;
-
-//             span {
-//                 text-align: center;
-//                 margin-left: 120px;
-//             }
-
-//             h1,
-//             p {
-//                 text-align: center;
-//                 align-items: center;
-//                 margin-right: 40px;
-
-//             }
-
-//             p {
-//                 width: 90%;
-//             }
-
-//             button {
-
-//                 margin-left: 100px;
-//                 width: 400px;
-//                 margin-bottom: 40px;
-//             }
-//         }
-
-//         .contact-box {
-//             position: absolute;
-//             top: 120px;
-//             margin: auto;
-
-//         }
-//     }
-
-
-
-//     .contain-header {
-//         flex-direction: column;
-//         height: auto;
-
-//         .title2 {
-//             width: 900px;
-//             align-self: center;
-//         }
-
-//         #create {
-//             width: 400px;
-//             align-self: center;
-//             margin-bottom: 120px;
-//             padding-bottom: 25px;
-
-
-//         }
-//     }
-
-//     .T2 {
-//         align-items: center;
-//         text-align: center;
-
-//         p {
-//             margin-left: 270px;
-//         }
-//     }
-
-//     .box {
-//         align-items: center;
-//         background: #6d6a6a98;
-//         width: 400px;
-//         margin-left: 240px;
-//     }
-
-// }
-
-// footer {
-//     flex-wrap: wrap;
-//     height: auto;
-//     padding-bottom: 200px;
-
-//     .suffer-footer {
-//         width: 100%;
-//         align-items: center;
-
-//         .contact-footer {
-//             display: none;
-//         }
-
-//         .text-footer {
-//             text-align: center;
-//         }
-
-//         .logo-footer {
-//             img {
-//                 width: 50px;
-//             }
-
-//             h3 {
-//                 font-size: 27px;
-//             }
-//         }
-//     }
-
-//     .about-footer {
-//         width: 30%;
-//         margin-left: 15%;
-//         margin-top: 100px;
-
-//         h3 {
-//             font-size: 27px;
-//         }
-
-//         ul {
-//             width: 100%;
-//             @include df-fd;
-//             align-items: start;
-
-//             li {
-//                 font-size: 18px;
-//             }
-//         }
-//     }
-
-//     .our-social {
-//         width: 40%;
-//         margin-top: 100px;
-
-//         h3 {
-//             font-size: 27px;
-//         }
-
-//         .our {
-//             @include df-fd;
-//             height: auto;
-
-//             h5 {
-//                 margin-top: 20px;
-
-//                 i {
-//                     margin-right: 20px;
-//                     font-size: 23px;
-//                 }
-
-//                 a {
-//                     font: {
-//                         weight: 300;
-//                         size: 19px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     .copyright {
-//         margin-top: 650px;
-//         margin-left: 200px;
-//     }
-
-// }
-
-
-
-
-
-// @media (max-width: 600px) {
-
-
-//     header {
-//         height: auto;
-//         flex-direction: column-reverse;
-//         justify-content: center;
-//         align-items: center;
-
-//         .pic>img {
-//             width: 300px;
-//             margin-top: 10px;
-//             margin-right: 105px;
-//             margin-bottom: 90px;
-//         }
-
-//         .contact-box>h3 {
-//             width: 60px;
-//             font-size: 10px;
-//         }
-
-//         .title {
-//             margin-top: 100px;
-//             width: 400px;
-
-//             span {
-//                 font-size: 30px;
-//                 text-align: center;
-//                 margin-left: 135px;
-//             }
-
-//             h1 {
-//                 font-size: 40px;
-//             }
-
-//             p {
-//                 font-size: 13px;
-//             }
-
-//             h1,
-//             p {
-//                 text-align: center;
-//                 align-items: center;
-//                 margin-right: 40px;
-
-
-//             }
-
-//             p {
-//                 width: 90%;
-//             }
-
-//             button {
-
-//                 margin-left: 100px;
-//                 width: 400px;
-//                 margin-bottom: 40px;
-//             }
-//         }
-
-//         .contact-box {
-//             position: absolute;
-//             top: 120px;
-//             margin: auto;
-
-//         }
-//     }
-
-
-
-//     .contain-header {
-//         flex-direction: column;
-//         height: auto;
-
-//         .title2 {
-//             width: 900px;
-//             align-self: center;
-
-//             .T2 {
-//                 align-items: center;
-//                 text-align: center;
-
-//                 p {
-//                     margin-left: 270px;
-//                     font-size: 13px;
-//                 }
-
-//                 h1 {
-//                     font-size: 40px;
-//                 }
-
-//             }
-
-//             .box {
-//                 align-items: center;
-//                 background: #6d6a6a98;
-//                 width: 300px;
-//                 margin-left: 300px;
-//             }
-
-//             i {
-//                 width: 13px;
-//                 margin-left: 120px;
-//             }
-
-//             p {
-//                 font-size: 13px;
-//                 margin-left: 13px;
-//             }
-//         }
-
-//         #create {
-//             width: 350px;
-//             align-self: center;
-//             margin-bottom: 100px;
-//             padding-bottom: 20px;
-
-//             h1 {
-//                 font-size: 20px;
-//             }
-
-//             .name {
-//                 display: flex;
-//                 flex-direction: column-reverse;
-//                 width: 90%;
-
-//                 input[type=text] {
-//                     width: 96%;
-//                 }
-//             }
-//         }
-//     }
-
-
-//     // -----footer---/
-//     footer {
-//         width: 100%;
-//         height: auto;
-//         padding: 0;
-//         margin: 0;
-//         flex-wrap: wrap;
-//         justify-content: center;
-
-//         .suffer-footer {
-//             margin: 0;
-//             padding: 0;
-//             margin-top: 50px;
-//             width: 90%;
-//             justify-content: center;
-
-//             .logo-footer {
-//                 justify-content: center;
-//                 width: 90%;
-
-//                 img {
-//                     width: 50px;
-//                 }
-
-//                 h3 {
-//                     font-size: 27px;
-//                 }
-
-//             }
-
-//             .text-footer {
-//                 margin: 0;
-//                 padding: 0;
-//                 margin-bottom: 20px;
-//             }
-
-//             .contact-footer {
-//                 margin: 0;
-//                 padding: 0;
-
-//                 .number-phone {
-//                     display: flex;
-//                     margin-bottom: 10px;
-
-//                     i {
-//                         font-size: 30px;
-//                         margin-right: 10px;
-//                     }
-//                 }
-
-//                 .email {
-//                     display: flex;
-
-//                     i {
-//                         font-size: 30px;
-//                         margin-right: 10px;
-//                     }
-//                 }
-//             }
-//         }
-
-//         .about-footer {
-//             width: 90%;
-//             margin: 0;
-//             padding: 0;
-//             margin-top: 50px;
-//             align-items: center;
-
-//             h3 {
-//                 margin-top: 10px;
-//                 font-size: 30px;
-//                 text-decoration: underline;
-//             }
-
-//             ul {
-//                 width: 90%;
-//                 @include df-fd;
-//                 align-items: center;
-
-//                 li {
-//                     font: {
-//                         size: 20px;
-//                         weight: bolder;
-//                     }
-
-//                     list-style-type: none;
-//                     margin-left: 0;
-//                 }
-//             }
-//         }
-
-//         .our-social {
-//             width: 90%;
-//             padding: 0;
-//             margin: 0;
-//             margin-top: 50px;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             margin-bottom: 60px;
-
-//             h3 {
-//                 margin-top: 10px;
-//                 font-size: 30px;
-//                 text-decoration: underline;
-//             }
-
-//             .our {
-//                 width: 100%;
-//                 flex-direction: row;
-//                 justify-content: space-evenly;
-//                 height: auto;
-//                 margin-bottom: 50px;
-//                 padding: 0;
-
-//                 h5 {
-
-//                     i {
-//                         font-size: 40px;
-//                     }
-
-//                     a {
-//                         display: none;
-//                     }
-//                 }
-
-//                 h5:hover {
-//                     color: blue;
-//                 }
-//             }
-//         }
-
-//         .copyright {
-//             font-size: 17px;
-//             margin: 0;
-//             margin-top: 740px;
-//         }
-
-
-//     }
-// }
