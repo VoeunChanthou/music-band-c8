@@ -61,7 +61,7 @@
         }
         .content-header{
             display: flex;
-            // justify-content: center;
+            margin-left: 90px;
             margin-top: 100px;
             background: none;
 
@@ -74,10 +74,10 @@
                
             }
             p{
-                width: 500px;
+                width: 350px;
                 margin-left: -150px;
                 align-items: self-start;
-                font-size: 17px;
+                font-size: 13px;
             }
         }
     }
@@ -94,13 +94,17 @@
           
         }
         .history{
-            width: 400px;
+            margin: 0;
+            padding: 0;
+            width: 40%;
             display: flex;
             justify-content: center;
         p{
-            width: 380px;
+            margin: 0;padding: 0;
+            width: 310px;
             font-size: 13px;
-            margin-left: -180px;
+            margin-left: -20px;
+            
             
         }
     }
@@ -135,6 +139,7 @@
     //-----team-member-----//
 
     .team-member {
+        
         width: auto;
         height: auto;
         display: flex;
@@ -148,9 +153,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 180vh;
+            height: 150vh;
+           
             .card{
-                width: 50%;
+                width: 90%;
                 border-radius: 25px;
                 .pl{
                     border: 2px solid $main-color;
@@ -180,23 +186,139 @@
 
     }
     //-----footer-----//
-
     footer {
-        display: grid;
-        grid-template-rows: 1fr 2fr 3fr;
-        justify-items: center;
-        .about-footer, .our-social {
-            width: 70%;
-            text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .suffer-footer {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            width: 90%;
+            justify-content: center;
+    
+            .logo-footer {
+                justify-content: center;
+                width: 90%;
+    
+                img {
+                    width: 50px;
+                }
+    
+                h3 {
+                    font-size: 27px;
+                }
+    
+            }
+    
+            .text-footer {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+    
+            .contact-footer {
+                margin: 0;padding: 0;
+                .number-phone {
+                    display: flex;
+                    margin-bottom: 10px;
+    
+                    i {
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+                }
+    
+                .email {
+                    display: flex;
+    
+                    i {
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
+    
         .about-footer {
-            margin-left: 0;
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            align-items: center;
+    
+            h3 {
+                margin-top: 10px;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+    
+            ul {
+                width: 90%;
+                @include df-fd;
+                align-items: center;
+    
+                li {
+                    font: {
+                        size: 20px;
+                        weight: bolder;
+                    }
+                    list-style-type: none;
+                    margin-left: 0;
+                }
+            }
         }
+    
+        .our-social {
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+    
+            h3 {
+                margin-top: 10px;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            .our {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: auto;
+                margin-bottom: 50px;
+                padding: 0;
+    
+                h5 {
+    
+                    i {
+                        font-size: 40px;
+                    }
+    
+                    a {
+                        display: none;
+                    }
+                }
+                h5:hover {
+                    color: blue;
+                }
+            }
+        }
+    
         .copyright {
-            margin-top: 1100px;
-            margin-left: 20px;
+            font-size: 17px;
+            margin: 0;
+            margin-top: 740px;
         }
+    
+    
     }
-
 
 }
