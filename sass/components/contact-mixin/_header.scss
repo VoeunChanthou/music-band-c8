@@ -4,12 +4,24 @@
 
 
 header {
+    @include responsive ('tablet') {
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
     height: 750px;
     background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
     @include bg-img;
     @include df-jcsb;
 
     .contact-box {
+        @include responsive ('tablet') {
+            position: absolute;
+            top: 120px;
+            margin: auto;
+        }
         position: absolute;
 
         border: {
@@ -34,6 +46,11 @@ header {
     }
 
     .title {
+        @include responsive ('tablet') {
+            margin-top: 150px;
+            margin-left: 40px;
+            width: 70%;
+        }
         width: 600px;
         padding-left: 100px;
 
@@ -51,6 +68,10 @@ header {
         }
 
         span {
+            @include responsive ('tablet') {
+                text-align: center;
+                margin-left: 120px;
+            }
             font: {
                 size: 40px;
                 weight: bolder;
@@ -61,16 +82,26 @@ header {
         }
 
         p {
+            color: $white;
             width: 500px;
         }
 
         h1,
-        h3,
-        p {
+        h3 {
+            @include responsive ('tablet') {
+                text-align: center;
+                align-items: center;
+                margin-right: 40px;
+            }
             color: $white;
         }
 
         #button {
+            @include responsive ('tablet') {
+                margin-left: 0;
+                width: 230px;
+                margin-bottom: 40px;
+            }
             margin-top: 25px;
             @include button;
 
@@ -81,14 +112,28 @@ header {
         }
     }
 
-    .pic>img {
-        width: 540px;
-
-        margin: {
-            top: 170px;
-            left: 70px;
+    .pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            @include responsive ('tablet') {
+                width: 75%;
+                align-self: center;
+                margin-top: 10px;
+                margin-left: 0;
+                margin-bottom: 100px;
+                margin-top: 40px;
+            }
+            width: 540px;
+    
+            margin: {
+                top: 170px;
+                left: 70px;
+            }
+    
+            box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
         }
-
-        box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
     }
+ 
 }
