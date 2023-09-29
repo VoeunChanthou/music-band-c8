@@ -1,8 +1,12 @@
 @import './group-mixins';
 @import './variable';
+@import './MIxins/responsive';
 
 
 nav {
+    @include responsive ('Mobile') {
+        height: 60px;
+    }
     background: $navbar-color;
     height: 70px;
     width: 100%;
@@ -12,13 +16,39 @@ nav {
     top: 0;
     z-index: 100;
     .menu {
+        @include responsive ('Mobile') {
+            display: block;
+            @include df-jcc-aic;
+            margin-right: 20px;
+            i {
+                font-size: 50px;
+            }
+        }
         display: none;
     }
+    #menu_check:checked~ul {
+        left: 0;
+        transition: 0.5s;
+    }
+
+    .menu:hover {
+        color: $main-color;
+    }
+
     .logo {
+        @include responsive('tablet') {
+            margin-left: 40px;
+        }
+        @include responsive ('Mobile') {
+            margin-left: 20px;
+        }
         width: 300px;
         @include df-aic;
         margin-left: 70px;
         h1 {
+            @include responsive ('Mobile') {
+                display: none;
+            }
             font-size: 30px;
             span {
                 color: #DB3E34;
@@ -26,11 +56,32 @@ nav {
         }
     }
     ul {
+        @include responsive('tablet') {
+            margin-right: 40px;
+            width: 400px;
+        }
+
+        @include responsive ('Mobile') {
+            position: absolute;
+            transition: 0.5s;
+            left: -100%;
+            top: 60px;
+            background: $navbar-color;
+            @include df-fd;
+            width: 100%;
+        }
+
         width: 500px;
         @include df-aic;
         justify-content: space-between;
         margin-right: 70px;
         li {
+            @include responsive ('Mobile') {
+                margin: {
+                    top: 30px;
+                    bottom: 30px;
+                }
+            }
             list-style-type: none;
             a {
                 text-decoration: none;

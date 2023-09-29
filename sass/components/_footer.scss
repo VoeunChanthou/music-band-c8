@@ -4,6 +4,21 @@
 
 
 footer {
+    @include responsive ('tablet') {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    @include responsive ('Mobile') {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     height: 500px;
     padding: 100px 70px;
     background: $navbar-color;
@@ -11,18 +26,40 @@ footer {
     @include df-jcsb;
 
     .suffer-footer {
+        @include responsive ('tablet') {
+            width: 100%;
+            align-items: center;
+        }
+
+        @include responsive ('Mobile') {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            width: 90%;
+            justify-content: center;
+        }
         width: 300px;
         @include df-fd;
 
         .logo-footer {
+            @include responsive ('Mobile') {
+                justify-content: center;
+                width: 90%;
+            }
             @include df-aic;
             padding-bottom: 20px;
 
             img {
+                @include responsive ('tablet') {
+                    width: 50px;
+                }
                 width: 70px;
             }
 
             h3 {
+                @include responsive ('tablet') {
+                    font-size: 27px;
+                }
                 font-size: 30px;
 
                 span {
@@ -33,11 +70,31 @@ footer {
         }
 
         .text-footer {
+            @include responsive ('tablet') {
+                text-align: center;
+            }
+
+            @include responsive ('Mobile') {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+            }
             margin-bottom: 20px;
         }
 
         .contact-footer {
+            @include responsive ('tablet') {
+                display: none;
+            }
+
+            @include responsive ('Mobile') {
+                margin: 0;padding: 0;
+            }
             .number-phone {
+                @include responsive ('Mobile') {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
                 display: flex;
                 margin-bottom: 10px;
 
@@ -59,24 +116,63 @@ footer {
     }
 
     .about-footer {
+        @include responsive ('tablet') {
+            width: 30%;
+            margin-left: 15%;
+            margin-top: 100px;
+        }
+
+        @include responsive ('Mobile') {
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            align-items: center;
+        }
+
         width: 180px;
         @include df-fd;
 
         h3 {
+            @include responsive ('tablet') {
+                font-size: 27px;
+            }
             margin-top: 10px;
             font-size: 30px;
             text-decoration: underline;
         }
 
         ul {
+            @include responsive ('tablet') {
+                width: 100%;
+                @include df-fd;
+                align-items: start;
+            }
+
+            @include responsive ('Mobile') {
+                width: 90%;
+                align-items: center;
+            }
             width: 100%;
             @include df-fd;
             align-items: start;
 
             li {
+                @include responsive ('tablet') {
+                    font-size: 18px;
+                }
                 font: {
                     size: 20px;
                     weight: bolder;
+                }
+
+                @include responsive ('Mobile') {
+                    font: {
+                        size: 20px;
+                        weight: bolder;
+                    }
+                    list-style-type: none;
+                    margin-left: 0;
                 }
 
                 padding-top: 30px;
@@ -87,27 +183,77 @@ footer {
     }
 
     .our-social {
+        @include responsive ('tablet') {
+            width: 40%;
+            margin-top: 100px;
+        }
+
+        @include responsive ('Mobile') {
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+        }
         width: 300px;
 
         h3 {
+            @include responsive ('tablet') {
+                font-size: 27px;
+            }
             margin-top: 10px;
             font-size: 30px;
             text-decoration: underline;
         }
         .our {
+            @include responsive ('tablet') {
+                @include df-fd;
+                height: auto;
+            }
+
+            @include responsive ('Mobile') {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: auto;
+                margin-bottom: 50px;
+                padding: 0;
+            }
+
             @include df-fd;
             height: 70%;
 
             h5 {
+                @include responsive ('tablet') {
+                    margin-top: 20px;
+                }
                 margin-top: 30px;
                 @include df-aic;
 
                 i {
+                    @include responsive ('tablet') {
+                        margin-right: 20px;
+                        font-size: 23px;
+                    }
+
+                    @include responsive ('Mobile') {
+                        font-size: 40px;
+                    }
                     margin-right: 20px;
                     font-size: 30px;
                 }
 
                 a {
+                    @include responsive ('tablet') {
+                        font-size: 19px;
+                    }
+
+                    @include responsive ('Mobile') {
+                        display: none;
+                    }
                     font: {
                         weight: 300;
                         size: 20px;
@@ -124,6 +270,15 @@ footer {
     }
 
     .copyright {
+        @include responsive ('tablet') {
+            margin-top: 650px;
+            margin-left: 200px;
+        }
+
+        @include responsive ('Mobile') {
+            margin: 0;
+            margin-top: 740px;
+        }
         position: absolute;
         margin: 540px 0px 0px 400px;
     }

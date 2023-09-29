@@ -3,6 +3,17 @@
 
 
 .new-album {
+    @include responsive ('tablet'){
+        height: 1000px;
+    }
+
+    @include responsive ('Mobile') {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     height: 1200px;
     @include df-fd;
     background: {
@@ -10,15 +21,31 @@
         size: cover;
     }
     .new {
+        @include responsive ('tablet') {
+            margin-top: 130px;
+        }
         margin-top: 150px;
         text-align: center;
 
         h2 {
+            @include responsive ('tablet') {
+                font-size: 27px;
+            }
             color: $white;
         }
     }
 
     .album-text {
+        @include responsive ('tablet') {
+            margin: 10px 40px;
+            padding: 20px;
+        }
+
+        @include responsive ('Mobile') {
+            margin: 30px 20px;
+            padding: 0;
+        }
+
         margin: 10px 70px;
         padding: 40px;
         text-align: center;
@@ -26,10 +53,37 @@
     }
 
     .album {
+        @include responsive ('tablet') {
+            height: 530px;
+            margin: 50px 40px;
+        }
+
+        @include responsive ('Mobile') {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+
         height: 530px;
         margin: 50px 70px;
         @include df-jcsb;
         .album-card {
+            @include responsive ('tablet') {
+                width: 35%;
+            }
+
+            @include responsive ('Mobile') {
+                width: 90%;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                padding-bottom: 30px;
+                background: rgba(22, 21, 21, 0.473);
+            }
             width: 370px;
             @include df-aic;
             flex-direction: column;
@@ -37,6 +91,10 @@
             .album-img,
             .album-img1,
             .album-img2 {
+                @include responsive ('tablet') {
+                    width: 220px;
+                    height: 200px;
+                }
                 @include album-img;
             }
 
@@ -54,6 +112,10 @@
             }
 
             h4 {
+                @include responsive ('tablet') {
+                    font-size: 18px;
+                }
+
                 font: {
                     size: 25px;
                     weight: bolder;
@@ -64,12 +126,33 @@
             }
 
             p {
+                @include responsive ('tablet') {
+                    margin: 10px 50px;
+                    font-size: 19px;
+                }
+
+                @include responsive ('Mobile') {
+                    margin: 10px;
+                }
                 margin: 10px 70px;
                 color: $white;
                 text-align: center;
             }
 
             button {
+                @include responsive ('tablet') {
+                    align-self: center;
+                    margin-top: 20px;
+                    margin-top: 40px;
+                    width: 130px;
+                    height: 30px;
+                    font-size: 15px;
+                }
+
+                @include responsive ('Mobile') {
+                    width: 120px;
+                    font-size: 16px;
+                }
                 align-self: center;
                 margin-top: 20px;
                 @include button;

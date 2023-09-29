@@ -10,8 +10,32 @@ nav {
   top: 0;
   z-index: 100;
 }
+@media screen and (max-width: 600px) {
+  nav {
+    height: 60px;
+  }
+}
 nav .menu {
   display: none;
+}
+@media screen and (max-width: 600px) {
+  nav .menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  nav .menu i {
+    font-size: 50px;
+  }
+}
+nav #menu_check:checked ~ ul {
+  left: 0;
+  transition: 0.5s;
+}
+nav .menu:hover {
+  color: #DB3E34;
 }
 nav .logo {
   width: 300px;
@@ -19,8 +43,23 @@ nav .logo {
   align-items: center;
   margin-left: 70px;
 }
+@media screen and (max-width: 1024px) {
+  nav .logo {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .logo {
+    margin-left: 20px;
+  }
+}
 nav .logo h1 {
   font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+  nav .logo h1 {
+    display: none;
+  }
 }
 nav .logo h1 span {
   color: #DB3E34;
@@ -32,8 +71,32 @@ nav ul {
   justify-content: space-between;
   margin-right: 70px;
 }
+@media screen and (max-width: 1024px) {
+  nav ul {
+    margin-right: 40px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    transition: 0.5s;
+    left: -100%;
+    top: 60px;
+    background: #181717;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 nav ul li {
   list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 nav ul li a {
   text-decoration: none;
@@ -54,6 +117,12 @@ header {
   background-image: url(../image/photo_2023-09-24_11-29-11.jpg);
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .title {
   background: rgba(0, 0, 0, 0.6117647059);
@@ -63,29 +132,97 @@ header {
   margin-top: 90px;
   padding: 20px 10px;
 }
+@media screen and (max-width: 1024px) {
+  .title {
+    width: 500px;
+    height: auto;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    width: 100%;
+    height: 80%;
+    margin: 40px 50px 70px 20px;
+  }
+  .title h1 {
+    font-size: 33px;
+  }
+}
 .title h1 {
   font-size: 60px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 45px;
+  }
+}
 
 .our-business {
   background: #B7B7B7;
-  height: 470px;
+  height: auto;
+  padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .our-business {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .our-business .business {
   margin-top: 50px;
   width: 700px;
   margin-left: 70px;
 }
+@media screen and (max-width: 1024px) {
+  .our-business .business {
+    margin-top: 50px;
+    width: 60%;
+    height: auto;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-business .business {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+}
 .our-business .business h2 {
   color: #DB3E34;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .our-business .business h2 {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-business .business h2 {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}
 .our-business .business .business-button {
   margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .our-business .business .business-button {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }
 .our-business .business .business-button button {
   width: 170px;
@@ -97,6 +234,19 @@ header {
   font-size: 16px;
   border: 3px solid #DB3E34;
 }
+@media screen and (max-width: 1024px) {
+  .our-business .business .business-button button {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: ) {
+  .our-business .business .business-button button {
+    width: 120px;
+    font-size: 16px;
+  }
+}
 .our-business .business .business-button button:hover {
   background: none;
   color: #DB3E34;
@@ -107,6 +257,19 @@ header {
   margin-top: 50px;
   margin-right: 70px;
 }
+@media screen and (max-width: 1024px) {
+  .our-business .business-image {
+    width: 30%;
+    height: 60%;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-business .business-image {
+    display: none;
+  }
+}
 .our-business .business-image .image {
   background: url(../image/photo_2023-09-24_11-29-45.jpg);
   width: 100%;
@@ -115,6 +278,11 @@ header {
   margin-top: 10px;
   border: 2px solid #DB3E34;
 }
+@media screen and (max-width: 1024px) {
+  .our-business .business-image .image {
+    height: 350px;
+  }
+}
 
 .parthners-ship {
   background: #363636;
@@ -122,18 +290,55 @@ header {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+  .parthners-ship {
+    width: 100%;
+    height: auto;
+  }
+}
 .parthners-ship .partners {
   margin-top: 55px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .parthners-ship .partners {
+    width: 100%;
+    margin-top: 55px;
+    text-align: center;
+  }
+}
 .parthners-ship .partners h2 {
   color: #DB3E34;
+}
+@media screen and (max-width: 1024px) {
+  .parthners-ship .partners h2 {
+    font-size: 27px;
+  }
 }
 .parthners-ship .group-card {
   margin: 40px 70px 0px 70px;
   height: 260px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .parthners-ship .group-card {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parthners-ship .group-card {
+    margin: 0;
+    height: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 50px;
+  }
 }
 .parthners-ship .group-card .card:hover {
   box-shadow: rgba(214, 34, 22, 0.4) 5px 5px, rgba(204, 29, 23, 0.3) 10px 10px, rgba(197, 44, 24, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
@@ -145,11 +350,34 @@ header {
   text-align: center;
   padding-top: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .parthners-ship .group-card .card {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parthners-ship .group-card .card {
+    margin: 10px 20px;
+    width: 90%;
+    padding-top: 30px;
+  }
+}
 .parthners-ship .group-card .card h3 {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: bolder;
   color: white;
+}
+@media screen and (max-width: 1024px) {
+  .parthners-ship .group-card .card h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parthners-ship .group-card .card h3 {
+    font-size: 30px;
+  }
 }
 .parthners-ship .group-card .card h3:nth-child(2) {
   color: #DB3E34;
@@ -164,14 +392,31 @@ header {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+  .audience {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
 .audience .our-audience {
   background: rgba(0, 0, 0, 0.534);
   width: 290px;
   margin-top: 60px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .audience .our-audience {
+    width: 70%;
+  }
+}
 .audience .our-audience h2 {
   color: white;
+}
+@media screen and (max-width: 1024px) {
+  .audience .our-audience h2 {
+    font-size: 27px;
+  }
 }
 .audience .text-audience {
   background: rgba(0, 0, 0, 0.534);
@@ -184,6 +429,21 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .audience .text-audience {
+    margin: 80px 40px;
+    padding: 20px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .audience .text-audience {
+    height: auto;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 40px 20px 70px 20px;
+  }
+}
 
 .our-song {
   display: flex;
@@ -192,6 +452,14 @@ header {
   background: #363636;
   padding-bottom: 70px;
 }
+@media screen and (max-width: 600px) {
+  .our-song {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
 .our-song .song-title {
   margin-top: 70px;
   text-align: center;
@@ -199,12 +467,35 @@ header {
 .our-song .song-title h2 {
   color: #DB3E34;
 }
+@media screen and (max-width: 1024px) {
+  .our-song .song-title h2 {
+    font-size: 27px;
+  }
+}
 .our-song .group-song {
   margin: 50px 150px;
   padding: 20px 70px 50px 70px;
   background: #414141;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .our-song .group-song {
+    margin: 50px 40px;
+    padding: 20px 40px 40px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-song .group-song {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 40px;
+    margin-bottom: 60px;
+    background: none;
+  }
 }
 .our-song .group-song .song-card {
   margin-top: 30px;
@@ -214,9 +505,29 @@ header {
   align-items: center;
   background: rgb(235, 235, 235);
 }
+@media screen and (max-width: 600px) {
+  .our-song .group-song .song-card .box {
+    flex-direction: column;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+}
 .our-song .group-song .song-card .box .song-img {
   width: 80px;
   height: 60px;
+}
+@media screen and (max-width: 600px) {
+  .our-song .group-song .song-card .box .song-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../image/suffer-band.webp);
+    background-size: cover;
+  }
+  .our-song .group-song .song-card .box .song-img img {
+    display: none;
+  }
 }
 .our-song .group-song .song-card .box .song {
   width: 100%;
@@ -230,6 +541,16 @@ header {
   color: white;
   font-size: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .our-song .group-song .song-card label {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-song .group-song .song-card label {
+    display: none;
+  }
+}
 .our-song .group-song button {
   align-self: center;
   margin-top: 25px;
@@ -241,6 +562,14 @@ header {
   border-radius: 10px;
   font-size: 16px;
   border: 3px solid #DB3E34;
+}
+@media screen and (max-width: 1024px) {
+  .our-song .group-song button {
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
 }
 .our-song .group-song button:hover {
   background: none;
@@ -254,12 +583,35 @@ header {
   background-image: url(../image/ba9d9b45fd30477d642ebc17fe697cbfa24da2bc.jpg);
   background-size: cover;
 }
+@media screen and (max-width: 1024px) {
+  .new-album {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 .new-album .new {
   margin-top: 150px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .new-album .new {
+    margin-top: 130px;
+  }
+}
 .new-album .new h2 {
   color: white;
+}
+@media screen and (max-width: 1024px) {
+  .new-album .new h2 {
+    font-size: 27px;
+  }
 }
 .new-album .album-text {
   margin: 10px 70px;
@@ -267,17 +619,61 @@ header {
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .new-album .album-text {
+    margin: 10px 40px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album .album-text {
+    margin: 30px 20px;
+    padding: 0;
+  }
+}
 .new-album .album {
   height: 530px;
   margin: 50px 70px;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .new-album .album {
+    height: 530px;
+    margin: 50px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album .album {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
 .new-album .album .album-card {
   width: 370px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .new-album .album .album-card {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album .album .album-card {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    background: rgba(22, 21, 21, 0.473);
+  }
 }
 .new-album .album .album-card .album-img,
 .new-album .album .album-card .album-img1,
@@ -287,6 +683,14 @@ header {
   height: 270px;
   border-radius: 10px;
   background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .new-album .album .album-card .album-img,
+  .new-album .album .album-card .album-img1,
+  .new-album .album .album-card .album-img2 {
+    width: 220px;
+    height: 200px;
+  }
 }
 .new-album .album .album-card .album-img {
   background-image: url(../image/X-bro.jpg);
@@ -304,10 +708,26 @@ header {
   margin-top: 20px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .new-album .album .album-card h4 {
+    font-size: 18px;
+  }
+}
 .new-album .album .album-card p {
   margin: 10px 70px;
   color: white;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .new-album .album .album-card p {
+    margin: 10px 50px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album .album .album-card p {
+    margin: 10px;
+  }
 }
 .new-album .album .album-card button {
   align-self: center;
@@ -320,6 +740,22 @@ header {
   border-radius: 10px;
   font-size: 16px;
   border: 3px solid #DB3E34;
+}
+@media screen and (max-width: 1024px) {
+  .new-album .album .album-card button {
+    align-self: center;
+    margin-top: 20px;
+    margin-top: 40px;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .new-album .album .album-card button {
+    width: 120px;
+    font-size: 16px;
+  }
 }
 .new-album .album .album-card button:hover {
   background: none;
@@ -334,21 +770,69 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 footer .suffer-footer {
   width: 300px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  footer .suffer-footer {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .suffer-footer {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    width: 90%;
+    justify-content: center;
+  }
 }
 footer .suffer-footer .logo-footer {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 600px) {
+  footer .suffer-footer .logo-footer {
+    justify-content: center;
+    width: 90%;
+  }
+}
 footer .suffer-footer .logo-footer img {
   width: 70px;
 }
+@media screen and (max-width: 1024px) {
+  footer .suffer-footer .logo-footer img {
+    width: 50px;
+  }
+}
 footer .suffer-footer .logo-footer h3 {
   font-size: 30px;
+}
+@media screen and (max-width: 1024px) {
+  footer .suffer-footer .logo-footer h3 {
+    font-size: 27px;
+  }
 }
 footer .suffer-footer .logo-footer h3 span {
   color: #DB3E34;
@@ -356,9 +840,38 @@ footer .suffer-footer .logo-footer h3 span {
 footer .suffer-footer .text-footer {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1024px) {
+  footer .suffer-footer .text-footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .suffer-footer .text-footer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer .suffer-footer .contact-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .suffer-footer .contact-footer {
+    margin: 0;
+    padding: 0;
+  }
+}
 footer .suffer-footer .contact-footer .number-phone {
   display: flex;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  footer .suffer-footer .contact-footer .number-phone {
+    display: flex;
+    margin-bottom: 10px;
+  }
 }
 footer .suffer-footer .contact-footer .number-phone i {
   font-size: 30px;
@@ -376,16 +889,51 @@ footer .about-footer {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1024px) {
+  footer .about-footer {
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .about-footer {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    align-items: center;
+  }
+}
 footer .about-footer h3 {
   margin-top: 10px;
   font-size: 30px;
   text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  footer .about-footer h3 {
+    font-size: 27px;
+  }
 }
 footer .about-footer ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+@media screen and (max-width: 1024px) {
+  footer .about-footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .about-footer ul {
+    width: 90%;
+    align-items: center;
+  }
 }
 footer .about-footer ul li {
   font-size: 20px;
@@ -394,27 +942,96 @@ footer .about-footer ul li {
   list-style-type: circle;
   margin-left: 20px;
 }
+@media screen and (max-width: 1024px) {
+  footer .about-footer ul li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .about-footer ul li {
+    font-size: 20px;
+    font-weight: bolder;
+    list-style-type: none;
+    margin-left: 0;
+  }
+}
 footer .our-social {
   width: 300px;
+}
+@media screen and (max-width: 1024px) {
+  footer .our-social {
+    width: 40%;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .our-social {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 footer .our-social h3 {
   margin-top: 10px;
   font-size: 30px;
   text-decoration: underline;
 }
+@media screen and (max-width: 1024px) {
+  footer .our-social h3 {
+    font-size: 27px;
+  }
+}
 footer .our-social .our {
   display: flex;
   flex-direction: column;
   height: 70%;
+}
+@media screen and (max-width: 1024px) {
+  footer .our-social .our {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .our-social .our {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 0;
+  }
 }
 footer .our-social .our h5 {
   margin-top: 30px;
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  footer .our-social .our h5 {
+    margin-top: 20px;
+  }
+}
 footer .our-social .our h5 i {
   margin-right: 20px;
   font-size: 30px;
+}
+@media screen and (max-width: 1024px) {
+  footer .our-social .our h5 i {
+    margin-right: 20px;
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .our-social .our h5 i {
+    font-size: 40px;
+  }
 }
 footer .our-social .our h5 a {
   font-weight: 300;
@@ -422,12 +1039,34 @@ footer .our-social .our h5 a {
   text-decoration: none;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  footer .our-social .our h5 a {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .our-social .our h5 a {
+    display: none;
+  }
+}
 footer .our-social .our h5:hover {
   color: blue;
 }
 footer .copyright {
   position: absolute;
   margin: 540px 0px 0px 400px;
+}
+@media screen and (max-width: 1024px) {
+  footer .copyright {
+    margin-top: 650px;
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .copyright {
+    margin: 0;
+    margin-top: 740px;
+  }
 }
 
 * {
@@ -455,549 +1094,4 @@ h2 {
 
 p {
   font-size: 20px;
-}
-
-@media (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-  p {
-    font-size: 18px;
-  }
-  nav .logo {
-    margin-left: 40px;
-  }
-  nav ul {
-    margin-right: 40px;
-    width: 400px;
-  }
-  .title {
-    width: 500px;
-    height: 250px;
-    margin-left: 40px;
-    padding: 10px 10px;
-  }
-  .title h1 {
-    font-size: 45px;
-  }
-  .title p {
-    font-size: 18px;
-  }
-  .our-business .business {
-    margin-top: 50px;
-    width: 60%;
-    height: 360px;
-    margin-left: 40px;
-  }
-  .our-business .business h2 {
-    font-size: 27px;
-  }
-  .our-business .business .business-button {
-    margin-top: 30px;
-  }
-  .our-business .business .business-button button {
-    width: 130px;
-    height: 30px;
-    font-size: 15px;
-  }
-  .our-business .business-image {
-    width: 30%;
-    height: 300px;
-    margin-left: 20px;
-    margin-right: 40px;
-  }
-  .our-business .business-image .image {
-    height: 260px;
-  }
-  .parthners-ship .partners h2 {
-    font-size: 27px;
-  }
-  .parthners-ship .group-card {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-  }
-  .parthners-ship .group-card .card {
-    width: 30%;
-  }
-  .parthners-ship .group-card .card h3 {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  .audience .our-audience h2 {
-    font-size: 27px;
-  }
-  .audience .text-audience {
-    margin: 80px 40px;
-    padding: 20px;
-    height: 150px;
-  }
-  .our-song .song-title h2 {
-    font-size: 27px;
-  }
-  .our-song .group-song {
-    margin: 50px 40px;
-    padding: 20px 40px 40px 40px;
-  }
-  .our-song .group-song .song-card label {
-    font-size: 18px;
-  }
-  .our-song .group-song button {
-    margin-top: 40px;
-    width: 130px;
-    height: 30px;
-    font-size: 15px;
-  }
-  .new-album {
-    height: 1000px;
-  }
-  .new-album .new {
-    margin-top: 130px;
-  }
-  .new-album .new h2 {
-    font-size: 27px;
-  }
-  .new-album .album-text {
-    margin: 10px 40px;
-    padding: 20px;
-  }
-  .new-album .album {
-    height: 530px;
-    margin: 50px 40px;
-  }
-  .new-album .album .album-card {
-    width: 35%;
-  }
-  .new-album .album .album-card .album-img,
-  .new-album .album .album-card .album-img1,
-  .new-album .album .album-card .album-img2 {
-    width: 220px;
-    height: 200px;
-  }
-  .new-album .album .album-card h4 {
-    font-size: 18px;
-  }
-  .new-album .album .album-card p {
-    margin: 10px 50px;
-    font-size: 19px;
-  }
-  .new-album .album .album-card button {
-    align-self: center;
-    margin-top: 20px;
-    margin-top: 40px;
-    width: 130px;
-    height: 30px;
-    font-size: 15px;
-  }
-  footer {
-    flex-wrap: wrap;
-    height: auto;
-    padding-bottom: 200px;
-  }
-  footer .suffer-footer {
-    width: 100%;
-    align-items: center;
-  }
-  footer .suffer-footer .contact-footer {
-    display: none;
-  }
-  footer .suffer-footer .text-footer {
-    text-align: center;
-  }
-  footer .suffer-footer .logo-footer img {
-    width: 50px;
-  }
-  footer .suffer-footer .logo-footer h3 {
-    font-size: 27px;
-  }
-  footer .about-footer {
-    width: 30%;
-    margin-left: 15%;
-    margin-top: 100px;
-  }
-  footer .about-footer h3 {
-    font-size: 27px;
-  }
-  footer .about-footer ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  footer .about-footer ul li {
-    font-size: 18px;
-  }
-  footer .our-social {
-    width: 40%;
-    margin-top: 100px;
-  }
-  footer .our-social h3 {
-    font-size: 27px;
-  }
-  footer .our-social .our {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  footer .our-social .our h5 {
-    margin-top: 20px;
-  }
-  footer .our-social .our h5 i {
-    margin-right: 20px;
-    font-size: 23px;
-  }
-  footer .our-social .our h5 a {
-    font-weight: 300;
-    font-size: 19px;
-  }
-  footer .copyright {
-    margin-top: 650px;
-    margin-left: 200px;
-  }
-}
-@media (max-width: 600px) and (min-width: 240px) {
-  nav {
-    height: 60px;
-  }
-  nav .logo {
-    margin-left: 20px;
-  }
-  nav .logo h1 {
-    display: none;
-  }
-  nav ul {
-    position: absolute;
-    transition: 0.5s;
-    left: -100%;
-    top: 70px;
-    background: #181717;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  nav ul li {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  nav #menu_check:checked ~ ul {
-    left: 0;
-    transition: 0.5s;
-  }
-  nav .menu {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  nav .menu i {
-    font-size: 50px;
-  }
-  nav .menu:hover {
-    color: #DB3E34;
-  }
-  header {
-    width: 100%;
-    height: auto;
-  }
-  .title {
-    width: 100%;
-    height: 80%;
-    margin: 40px 50px 70px 20px;
-  }
-  .title h1 {
-    font-size: 33px;
-  }
-  .our-business {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .our-business .business {
-    margin-top: 50px;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-  }
-  .our-business .business h2 {
-    text-align: center;
-    margin-bottom: 27px;
-  }
-  .our-business .business .business-button {
-    display: flex;
-    justify-content: end;
-    margin-top: 30px;
-    margin-left: 0;
-  }
-  .our-business .business .business-button button {
-    width: 120px;
-    font-size: 16px;
-  }
-  .our-business .business-image {
-    display: none;
-  }
-  .parthners-ship {
-    width: 100%;
-    height: auto;
-  }
-  .parthners-ship .partners {
-    width: 100%;
-    margin-top: 55px;
-    text-align: center;
-  }
-  .parthners-ship .partners h2 {
-    color: #DB3E34;
-  }
-  .parthners-ship .group-card {
-    margin: 0;
-    height: auto;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    margin-bottom: 50px;
-  }
-  .parthners-ship .group-card .card {
-    margin: 10px 20px;
-    width: 90%;
-    padding-top: 30px;
-  }
-  .parthners-ship .group-card .card h3 {
-    font-size: 30px;
-  }
-  .parthners-ship .group-card .card h3:nth-child(2) {
-    color: #DB3E34;
-  }
-  .audience {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-  .audience .our-audience {
-    width: 70%;
-  }
-  .audience .our-audience h2 {
-    font-size: 27px;
-  }
-  .audience .text-audience {
-    height: auto;
-    width: 90%;
-    padding: 20px 10px;
-    margin: 40px 20px 70px 20px;
-  }
-  .our-song {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .our-song .song-title h2 {
-    font-size: 27px;
-  }
-  .our-song .group-song {
-    margin: 0;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 40px;
-    margin-bottom: 60px;
-    background: none;
-  }
-  .our-song .group-song .song-card {
-    margin-top: 30px;
-  }
-  .our-song .group-song .song-card .box {
-    flex-direction: column;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
-  }
-  .our-song .group-song .song-card .box .song-img {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../../../image/suffer-band.webp);
-    background-size: cover;
-  }
-  .our-song .group-song .song-card .box .song-img img {
-    display: none;
-  }
-  .our-song .group-song .song-card .box .song {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .our-song .group-song .song-card .box .song audio {
-    width: 100%;
-  }
-  .our-song .group-song .song-card label {
-    display: none;
-  }
-  .our-song .group-song button {
-    align-self: center;
-    margin-top: 25px;
-    width: 120px;
-    font-size: 16px;
-    background: #DB3E34;
-  }
-  .our-song .group-song button:hover {
-    background: none;
-    color: #DB3E34;
-  }
-  .new-album {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .new-album .new h2 {
-    font-size: 27px;
-  }
-  .new-album .album-text {
-    margin: 30px 20px;
-    padding: 0;
-  }
-  .new-album .album {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .new-album .album .album-card {
-    width: 90%;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-    background: rgba(22, 21, 21, 0.473);
-  }
-  .new-album .album .album-card p {
-    margin: 10px;
-  }
-  .new-album .album .album-card button {
-    width: 120px;
-    font-size: 16px;
-  }
-  .new-album .album .album-card button:hover {
-    background: none;
-    color: #DB3E34;
-  }
-  footer {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  footer .suffer-footer {
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
-    width: 90%;
-    justify-content: center;
-  }
-  footer .suffer-footer .logo-footer {
-    justify-content: center;
-    width: 90%;
-  }
-  footer .suffer-footer .logo-footer img {
-    width: 50px;
-  }
-  footer .suffer-footer .logo-footer h3 {
-    font-size: 27px;
-  }
-  footer .suffer-footer .text-footer {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  footer .suffer-footer .contact-footer {
-    margin: 0;
-    padding: 0;
-  }
-  footer .suffer-footer .contact-footer .number-phone {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  footer .suffer-footer .contact-footer .number-phone i {
-    font-size: 30px;
-    margin-right: 10px;
-  }
-  footer .suffer-footer .contact-footer .email {
-    display: flex;
-  }
-  footer .suffer-footer .contact-footer .email i {
-    font-size: 30px;
-    margin-right: 10px;
-  }
-  footer .about-footer {
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
-    align-items: center;
-  }
-  footer .about-footer h3 {
-    margin-top: 10px;
-    font-size: 30px;
-    text-decoration: underline;
-  }
-  footer .about-footer ul {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .about-footer ul li {
-    font-size: 20px;
-    font-weight: bolder;
-    list-style-type: none;
-    margin-left: 0;
-  }
-  footer .our-social {
-    width: 90%;
-    padding: 0;
-    margin: 0;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-  footer .our-social h3 {
-    margin-top: 10px;
-    font-size: 30px;
-    text-decoration: underline;
-  }
-  footer .our-social .our {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: auto;
-    margin-bottom: 50px;
-    padding: 0;
-  }
-  footer .our-social .our h5 i {
-    font-size: 40px;
-  }
-  footer .our-social .our h5 a {
-    display: none;
-  }
-  footer .our-social .our h5:hover {
-    color: blue;
-  }
-  footer .copyright {
-    font-size: 17px;
-    margin: 0;
-    margin-top: 740px;
-  }
 }/*# sourceMappingURL=home.css.map */

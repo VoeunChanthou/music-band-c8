@@ -5,21 +5,45 @@
 
 
 .audience {
+    @include responsive ('Mobile') {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
     height: 500px;
     background: url(../image/photo_2023-09-19_08-25-55.jpg);
     @include bg-img;
     @include df-aic;
     flex-direction: column;
     .our-audience {
+        @include responsive ('Mobile') {
+            width: 70%;
+        }
         background: $audience-bg;
         width: 290px;
         margin-top: 60px;
         text-align: center;
         h2 {
+            @include responsive ('tablet') {
+                font-size: 27px;
+            }
             color: $white;
         }
     }
     .text-audience {
+        @include responsive ("tablet") {
+            margin: 80px 40px;
+            padding: 20px;
+            height: 150px;
+        }
+
+        @include responsive ('Mobile') {
+            height: auto;
+            width: 90%;
+            padding: 20px 10px;
+            margin: 40px 20px 70px 20px;
+        }
+        
         background: $audience-bg;
         height: 200px;
         padding: 40px;
