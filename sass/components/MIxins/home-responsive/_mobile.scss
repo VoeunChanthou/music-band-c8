@@ -1,7 +1,11 @@
-@media (max-width: 720px) {
+@media (max-width: 600px) and (min-width: 240px) {
     nav {
+        height: 60px;
         .logo {
             margin-left: 20px;
+            h1 {
+                display: none;
+            }
         }
 
         ul {
@@ -23,7 +27,7 @@
 
         #menu_check:checked~ul {
             left: 0;
-            transition: 0.4s;
+            transition: 0.5s;
         }
 
         .menu {
@@ -42,170 +46,365 @@
     }
 
     // ----header---/
+    header {
+        width: 100%;
+        height: auto;
+    }
+    
     .title {
-        width: 400px;
-        height: 260px;
-        margin-left: 20px;
+        width: 100%;
+        height: 80%;
+        margin: 40px 50px 70px 20px;
+        h1 {
+            font-size: 33px;
+        }
     }
 
-    // ------our-business---/
+    
+    // -----bussiness----/
     .our-business {
+        height: auto;
+        @include df-jcsb;
         .business {
-            @include df-jcc-aic;
-            flex-direction: column;
+            margin-top: 50px;
             width: 100%;
-            margin: 20px;
-            height: auto;
-            text-align: center;
-
-            .business-button {
-                align-self: flex-end;
-
-                margin: {
-                    top: 70px;
-                    right: 20px;
-                }
-
-                button {
-                    width: 130px;
-                    height: 30px;
-                    font-size: 15px;
-                }
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 50px;
+            h2 {
+                text-align: center;
+                margin-bottom: 27px;
             }
+        
+            .business-button {
+                display: flex;
+                justify-content: end;
+                margin-top: 30px;
+                margin-left: 0;
+                button {
+                    width: 120px;
+                    font-size: 16px;
+                }
+            } 
         }
-
         .business-image {
             display: none;
         }
     }
 
-    // -----partner-ship---/
+    // ------pathner-----/
     .parthners-ship {
+        width: 100%;
         height: auto;
-
         .partners {
-            padding-top: 30px;
-            margin-top: 0;
-            background: #3a3a3a;
+            width: 100%;
+            margin-top: 55px;
+            text-align: center;
+            h2 {
+                color: $main-color;
+            }
         }
-
         .group-card {
-            margin: 40px 20px 30px 20px;
+            margin: 0;
+            height: auto;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+            margin-bottom: 50px;
+            .card {
+                margin: 10px 20px;
+                width: 90%;
+                padding-top: 30px;
+                h3 {
+                    font-size: 30px;
+                }
+                h3:nth-child(2) {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    // -------audien---/
+    .audience {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        .our-audience {
+            width: 70%;
+            h2 {
+                font-size: 27px;
+            }
+        }
+        .text-audience {
+            height: auto;
+            width: 90%;
+            padding: 20px 10px;
+            margin: 40px 20px 70px 20px;
+        }
+    }
+
+    // --------our-song----/
+    .our-song {
+        @include df-fd;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    
+        .song-title {
+    
+            h2 {
+                font-size: 27px;
+            }
+        }
+    
+        .group-song {
+            margin: 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 40px;
+            margin-bottom: 60px;
+            background: none;
+    
+            .song-card {
+                margin-top: 30px;
+                
+    
+                .box {
+                    flex-direction: column;
+                    height: 400px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 3fr 1fr;
+    
+                    .song-img {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(../../../../image/suffer-band.webp);
+                        background-size: cover;
+                        img {
+                            display: none;
+                        }
+                    }
+    
+                    .song {
+                        width: 100%;
+                        @include df-aic;
+    
+                        audio {
+                            width: 100%;
+    
+                        }
+                    }
+    
+                }
+    
+                label {
+                    display: none;
+                }
+            }
+    
+            button {
+                align-self: center;
+                margin-top: 25px;
+                width: 120px;
+                font-size: 16px;
+                background: $main-color;
+            }
+            button:hover {
+                @include button-hover;
+            }
+        }
+    
+    }
+
+    // ------new-album-----/
+    .new-album {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .new {
+            h2 {
+                font-size: 27px;
+            }
+        }
+    
+        .album-text {
+            margin: 30px 20px;
+            padding: 0;
+        }
+    
+        .album {
+            margin: 0;
+            padding: 0;
+            width: 100%;
             height: auto;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             justify-items: center;
-            row-gap: 30px;
-
-            .card {
-                width: 70%;
-                height: 400px;
-                padding-top: 100px;
-
-                h3 {
-                    font: {
-                        size: 60px;
-                    }
-                }
-            }
-        }
-    }
-
-    // -----audience---/
-    .audience {
-
-        .text-audience {
-            margin: 80px 20px;
-        }
-    }
-
-    // ------our-song-----/
-    .our-song {
-        .group-song {
-            margin: 40px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(4, 1fr);
-            gap: 50px;
-            padding: 0;
-            background: $our-song-bg;
-
-            .song-card {
-                label {
-                    display: none;
-                }
-
-                .box {
-                    display: grid;
-                    grid-template-rows: 4fr 1fr;
-                    height: 360px;
-                    border-radius: 10px;
-
-                    .song-img {
-                        width: 100%;
-                        height: 100%;
-                        background: url(../../../../image/suffer-band.webp);
-                        background-size: cover;
-                        border-radius: 10px 10px 0px 0px;
-
-                        img {
-                            display: none;
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    // -----new-album------/
-    .new-album {
-        height: auto;
-        .album {
-            height: auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-items: center;
-            row-gap: 50px;
             .album-card {
-                width: 80%;
-                height: 550px;
+                width: 90%;
                 border-radius: 10px;
-                background: rgba(27, 27, 27, 0.363);
-                .album-img, .album-img1, .album-img2 {
-                    margin-top: 30px;
-                    width: 80%;
-                    height: 90%;
+                margin-bottom: 50px;
+                padding-bottom: 30px;
+                background: rgba(22, 21, 21, 0.473);
+    
+                p {
+                    margin: 10px;
                 }
+    
                 button {
-                    margin-bottom: 40px;
-                    width: 135px;
-                    height: 50px;
-                    font-size: 15px;
+                    width: 120px;
+                    font-size: 16px;
                 }
-                h4 {
-                    font-size: 30px;
+                button:hover {
+                    @include button-hover;
                 }
             }
+    
         }
     }
 
+    // -----footer---/
     footer {
-        display: grid;
-        grid-template-rows: 1fr 2fr 3fr;
-        justify-items: center;
-        .about-footer, .our-social {
-            width: 70%;
-            text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .suffer-footer {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            width: 90%;
+            justify-content: center;
+    
+            .logo-footer {
+                justify-content: center;
+                width: 90%;
+    
+                img {
+                    width: 50px;
+                }
+    
+                h3 {
+                    font-size: 27px;
+                }
+    
+            }
+    
+            .text-footer {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+    
+            .contact-footer {
+                margin: 0;padding: 0;
+                .number-phone {
+                    display: flex;
+                    margin-bottom: 10px;
+    
+                    i {
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+                }
+    
+                .email {
+                    display: flex;
+    
+                    i {
+                        font-size: 30px;
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
+    
         .about-footer {
-            margin-left: 0;
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            align-items: center;
+    
+            h3 {
+                margin-top: 10px;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+    
+            ul {
+                width: 90%;
+                @include df-fd;
+                align-items: center;
+    
+                li {
+                    font: {
+                        size: 20px;
+                        weight: bolder;
+                    }
+                    list-style-type: none;
+                    margin-left: 0;
+                }
+            }
         }
+    
+        .our-social {
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+    
+            h3 {
+                margin-top: 10px;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+            .our {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: auto;
+                margin-bottom: 50px;
+                padding: 0;
+    
+                h5 {
+    
+                    i {
+                        font-size: 40px;
+                    }
+    
+                    a {
+                        display: none;
+                    }
+                }
+                h5:hover {
+                    color: blue;
+                }
+            }
+        }
+    
         .copyright {
-            margin-top: 1100px;
-            margin-left: 20px;
+            font-size: 17px;
+            margin: 0;
+            margin-top: 740px;
         }
+    
+    
     }
 }

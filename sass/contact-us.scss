@@ -253,37 +253,37 @@ p {
         height: auto;
 
         .title2 {
-            width: 90%;
+            width: 900px;
             align-self: center;
-        }
-        #create {
-            width: 500px;
-            align-self: center;
-            margin-bottom: 100px;
-            padding-bottom: 20px;
-        }
-        .T2{
-            align-items: center;
-            text-align: center;
-            p{
-                margin-left: 200px;
-            }
-        }
-        .box{
-            align-items: center;
-            background: #6d6a6a98;
-            width: 400px;
-            margin-left: 160px;
         }
 
+        #create {
+            width: 400px;
+            align-self: center;
+            margin-bottom: 120px;
+            padding-bottom: 25px;
+
+
+        }
     }
 
-    
+    .T2 {
+        align-items: center;
+        text-align: center;
+
+        p {
+            margin-left: 270px;
+        }
+    }
+
+    .box {
+        align-items: center;
+        background: #6d6a6a98;
+        width: 400px;
+        margin-left: 240px;
+    }
+
 }
-
-
-
-
 
 footer {
     flex-wrap: wrap;
@@ -368,4 +368,189 @@ footer {
         margin-left: 200px;
     }
 
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    nav {
+        .logo {
+            margin-left: 20px;
+        }
+
+        ul {
+            position: absolute;
+            transition: 0.5s;
+            left: -100%;
+            top: 70px;
+            background: $navbar-color;
+            @include df-fd;
+            width: 100%;
+
+            li {
+                margin: {
+                    top: 30px;
+                    bottom: 30px;
+                }
+            }
+        }
+
+        #menu_check:checked~ul {
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .menu {
+            display: block;
+            @include df-jcc-aic;
+            margin-right: 20px;
+
+            i {
+                font-size: 50px;
+            }
+        }
+
+        .menu:hover {
+            color: $main-color;
+        }
+    }
+
+
+
+    header {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .pic>img {
+            width: 300px;
+            margin-top: 10px;
+            margin-right: 105px;
+            margin-bottom: 90px;
+        }
+
+        .contact-box>h3 {
+            width: 60px;
+            font-size: 10px;
+        }
+
+        .title {
+            margin-top: 100px;
+            width: 400px;
+
+            span {
+                font-size: 30px;
+                text-align: center;
+                margin-left: 135px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            h1,
+            p {
+                text-align: center;
+                align-items: center;
+                margin-right: 40px;
+
+
+            }
+
+            p {
+                width: 90%;
+            }
+
+            button {
+
+                margin-left: 100px;
+                width: 400px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .contact-box {
+            position: absolute;
+            top: 120px;
+            margin: auto;
+
+        }
+    }
+
+
+
+    .contain-header {
+        flex-direction: column;
+        height: auto;
+
+        .title2 {
+            width: 900px;
+            align-self: center;
+
+            .T2 {
+                align-items: center;
+                text-align: center;
+
+                p {
+                    margin-left: 270px;
+                    font-size: 13px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                }
+
+            }
+
+            .box {
+                align-items: center;
+                background: #6d6a6a98;
+                width: 300px;
+                margin-left: 300px;
+            }
+
+            i {
+                width: 13px;
+                margin-left: 120px;
+            }
+
+            p {
+                font-size: 13px;
+                margin-left: 13px;
+            }
+        }
+
+        #create {
+            width: 400px;
+            align-self: center;
+            margin-bottom: 100px;
+            padding-bottom: 20px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .name {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 90%;
+
+                input[type=text] {
+                    width: 96%;
+                }
+            }
+
+
+
+
+        }
+    }
 }

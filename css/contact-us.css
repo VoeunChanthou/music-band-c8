@@ -99,6 +99,7 @@ header .title #button {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  border: 3px solid #DB3E34;
 }
 header .title #button a {
   text-decoration: none;
@@ -206,6 +207,9 @@ footer .our-social .our h5 a {
   font-size: 20px;
   text-decoration: none;
   color: white;
+}
+footer .our-social .our h5:hover {
+  color: blue;
 }
 footer .copyright {
   position: absolute;
@@ -403,27 +407,27 @@ p {
     height: auto;
   }
   .contain-header .title2 {
-    width: 90%;
+    width: 900px;
     align-self: center;
   }
   .contain-header #create {
-    width: 500px;
+    width: 400px;
     align-self: center;
-    margin-bottom: 100px;
-    padding-bottom: 20px;
+    margin-bottom: 120px;
+    padding-bottom: 25px;
   }
-  .contain-header .T2 {
+  .T2 {
     align-items: center;
     text-align: center;
   }
-  .contain-header .T2 p {
-    margin-left: 200px;
+  .T2 p {
+    margin-left: 270px;
   }
-  .contain-header .box {
+  .box {
     align-items: center;
     background: rgba(109, 106, 106, 0.5960784314);
     width: 400px;
-    margin-left: 160px;
+    margin-left: 240px;
   }
 }
 footer {
@@ -490,4 +494,141 @@ footer .our-social .our h5 a {
 footer .copyright {
   margin-top: 650px;
   margin-left: 200px;
+}
+
+@media (max-width: 600px) {
+  nav .logo {
+    margin-left: 20px;
+  }
+  nav ul {
+    position: absolute;
+    transition: 0.5s;
+    left: -100%;
+    top: 70px;
+    background: #181717;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  nav #menu_check:checked ~ ul {
+    left: 0;
+    transition: 0.5s;
+  }
+  nav .menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  nav .menu i {
+    font-size: 50px;
+  }
+  nav .menu:hover {
+    color: #DB3E34;
+  }
+  header {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  header .pic > img {
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 105px;
+    margin-bottom: 90px;
+  }
+  header .contact-box > h3 {
+    width: 60px;
+    font-size: 10px;
+  }
+  header .title {
+    margin-top: 100px;
+    width: 400px;
+  }
+  header .title span {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 135px;
+  }
+  header .title h1 {
+    font-size: 40px;
+  }
+  header .title p {
+    font-size: 13px;
+  }
+  header .title h1,
+  header .title p {
+    text-align: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+  header .title p {
+    width: 90%;
+  }
+  header .title button {
+    margin-left: 100px;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+  header .contact-box {
+    position: absolute;
+    top: 120px;
+    margin: auto;
+  }
+  .contain-header {
+    flex-direction: column;
+    height: auto;
+  }
+  .contain-header .title2 {
+    width: 900px;
+    align-self: center;
+  }
+  .contain-header .title2 .T2 {
+    align-items: center;
+    text-align: center;
+  }
+  .contain-header .title2 .T2 p {
+    margin-left: 270px;
+    font-size: 13px;
+  }
+  .contain-header .title2 .T2 h1 {
+    font-size: 40px;
+  }
+  .contain-header .title2 .box {
+    align-items: center;
+    background: rgba(109, 106, 106, 0.5960784314);
+    width: 300px;
+    margin-left: 300px;
+  }
+  .contain-header .title2 i {
+    width: 13px;
+    margin-left: 120px;
+  }
+  .contain-header .title2 p {
+    font-size: 13px;
+    margin-left: 13px;
+  }
+  .contain-header #create {
+    width: 400px;
+    align-self: center;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+  }
+  .contain-header #create h1 {
+    font-size: 20px;
+  }
+  .contain-header #create .name {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .contain-header #create .name input[type=text] {
+    width: 96%;
+  }
 }/*# sourceMappingURL=contact-us.css.map */

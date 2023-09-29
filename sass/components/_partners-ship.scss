@@ -17,6 +17,9 @@
         margin: 40px 70px 0px 70px;
         height: 260px;
         @include df-jcsb;
+        .card:hover {
+            box-shadow: rgba(214, 34, 22, 0.4) 5px 5px, rgba(204, 29, 23, 0.3) 10px 10px, rgba(197, 44, 24, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        }
         .card {
             background: $card-bg;
             width: 340px;
