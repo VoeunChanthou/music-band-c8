@@ -235,17 +235,17 @@ header .content-header p {
   background-color: #474545;
   height: 600px;
 }
+@media screen and (max-width: 1024px) {
+  .team-picture {
+    height: auto;
+  }
+}
 .team-picture h2 {
   margin-top: 60px;
   color: #DB3E34;
   font-size: 33px;
   font-weight: bolder;
   text-align: center;
-}
-@media screen and (max-width: 1024px) {
-  .team-picture h2 {
-    height: auto;
-  }
 }
 @media screen and (max-width: 600px) {
   .team-picture h2 {

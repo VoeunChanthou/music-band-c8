@@ -7,6 +7,9 @@
     @include df-fd;
     background-color: #474545;
     height: 600px;
+    @include responsive ('tablet') {
+        height: auto;
+    }
 
     h2 {
         margin-top: 60px;
@@ -18,10 +21,6 @@
         }
 
         text-align: center;
-
-        @include responsive ('tablet') {
-            height: auto;
-        }
 
         @include responsive ('Mobile') {
             font-size: 27px;
