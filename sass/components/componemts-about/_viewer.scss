@@ -5,20 +5,28 @@
 
 
 
-.about-viewer{
+.about-viewer {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: $card-song;
     height: 300px;
-    .view h1{
+
+    @include responsive ('tablet') {
+        width: 100%;
+        padding: 0;
+    }
+
+    .view h1 {
         font-weight: bolder;
         font-size: 40px;
-        margin: 10px 170px;
-        margin-top: 85px;
-        text-align: center;
-        
-        p{
+
+        @include responsive ('tablet') {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
             text-align: center;
             font-weight: bolder;
             font-size: 33px;

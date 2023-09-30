@@ -56,13 +56,13 @@ nav .logo {
 nav .logo h1 {
   font-size: 30px;
 }
+nav .logo h1 span {
+  color: #DB3E34;
+}
 @media screen and (max-width: 600px) {
   nav .logo h1 {
     display: none;
   }
-}
-nav .logo h1 span {
-  color: #DB3E34;
 }
 nav ul {
   width: 500px;
@@ -598,6 +598,7 @@ p {
 .contain-header {
   height: 750px;
   background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: flex;

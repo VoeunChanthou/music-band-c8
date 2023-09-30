@@ -36,6 +36,13 @@ p {
 
 
 .contain-header {
+    height: 750px;
+    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)),
+        url(../image/band1.jpg);
+    background-attachment: fixed;
+    @include bg-img;
+    @include df-jcsb;
+    padding: 10px 70px;
 
     @include responsive ('tablet') {
         flex-direction: column;
@@ -46,14 +53,11 @@ p {
         padding: 0;
     }
 
-    height: 750px;
-    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)),
-    url(../image/band1.jpg);
-    @include bg-img;
-    @include df-jcsb;
-    padding: 10px 70px;
-
     .title2 {
+        width: 50%;
+        color: $white;
+        margin-top: 70px;
+
         @include responsive ('tablet') {
             width: 70%;
             align-self: center;
@@ -62,10 +66,6 @@ p {
         @include responsive ('Mobile') {
             width: 90%;
         }
-
-        width: 50%;
-        color: $white;
-        margin-top: 70px;
 
         .box {
             margin-top: 30px;
@@ -96,17 +96,26 @@ p {
         }
 
         h1 {
+            font-size: 60px;
+            margin-bottom: 30px;
+
             @include responsive ('Mobile') {
                 font-size: 40px;
                 text-align: center;
             }
-
-            font-size: 60px;
-            margin-bottom: 30px;
         }
     }
 
     #create {
+        background: $form-bg;
+        width: 40%;
+        height: 75%;
+        @include df-fd;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 90px;
+        border-radius: 20px;
+
         @include responsive ('tablet') {
             width: 70%;
             height: 600px;
@@ -118,15 +127,6 @@ p {
         @include responsive ('Mobile') {
             width: 90%;
         }
-
-        background: $form-bg;
-        width: 40%;
-        height: 75%;
-        @include df-fd;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 90px;
-        border-radius: 20px;
 
         h1 {
             font-size: 33px;
@@ -152,22 +152,22 @@ p {
         }
 
         .name {
+            width: 90%;
+            @include df-jcsb;
+
             @include responsive ('Mobile') {
                 flex-direction: column;
             }
-
-            width: 90%;
-            @include df-jcsb;
         }
 
         input[type=text] {
-            @include responsive ('Mobile') {
-                width: 97%;
-            }
-
             padding: 9px;
             width: 40%;
             background: rgba(206, 206, 206, 0.664);
+
+            @include responsive ('Mobile') {
+                width: 97%;
+            }
         }
 
         input[type=email],

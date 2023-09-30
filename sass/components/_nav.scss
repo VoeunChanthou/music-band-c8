@@ -4,9 +4,6 @@
 
 
 nav {
-    @include responsive ('Mobile') {
-        height: 60px;
-    }
     background: $navbar-color;
     height: 70px;
     width: 100%;
@@ -15,17 +12,25 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+
+    @include responsive ('Mobile') {
+        height: 60px;
+    }
+
     .menu {
+        display: none;
+
         @include responsive ('Mobile') {
             display: block;
             @include df-jcc-aic;
             margin-right: 20px;
+
             i {
                 font-size: 50px;
             }
         }
-        display: none;
     }
+
     #menu_check:checked~ul {
         left: 0;
         transition: 0.5s;
@@ -36,26 +41,37 @@ nav {
     }
 
     .logo {
-        @include responsive('tablet') {
-            margin-left: 40px;
-        }
-        @include responsive ('Mobile') {
-            margin-left: 20px;
-        }
         width: 300px;
         @include df-aic;
         margin-left: 70px;
+
+        @include responsive('tablet') {
+            margin-left: 40px;
+        }
+
+        @include responsive ('Mobile') {
+            margin-left: 20px;
+        }
+
         h1 {
-            @include responsive ('Mobile') {
-                display: none;
-            }
             font-size: 30px;
+
             span {
                 color: #DB3E34;
             }
+
+            @include responsive ('Mobile') {
+                display: none;
+            }
         }
     }
+
     ul {
+        width: 500px;
+        @include df-aic;
+        justify-content: space-between;
+        margin-right: 70px;
+
         @include responsive('tablet') {
             margin-right: 40px;
             width: 400px;
@@ -71,27 +87,28 @@ nav {
             width: 100%;
         }
 
-        width: 500px;
-        @include df-aic;
-        justify-content: space-between;
-        margin-right: 70px;
         li {
+            list-style-type: none;
+
             @include responsive ('Mobile') {
                 margin: {
                     top: 30px;
                     bottom: 30px;
                 }
             }
-            list-style-type: none;
+
             a {
                 text-decoration: none;
+
                 font: {
                     size: 20px;
                     weight: bold;
                 }
+
                 color: $white;
-                
+
             }
+
             a:hover {
                 color: $main-color;
                 border-bottom: 4px solid $main-color;
@@ -99,6 +116,3 @@ nav {
         }
     }
 }
-
-
-

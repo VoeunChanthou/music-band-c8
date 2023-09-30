@@ -12,9 +12,20 @@
     background: #000000e7;
     height: 650px;
 
+    @include responsive ('tablet') {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+    }
+
     h2 {
         color: $main-color;
         text-align: center;
+
+        @include responsive ('tablet') {
+            margin-top: 40px;
+            font-size: 27px;
+        }
 
         font: {
             weight: bolder;
@@ -32,9 +43,26 @@
         @include df-jcsb;
         height: 430px;
         margin: 30px 70px;
+
+        @include responsive ('tablet') {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0;
+            justify-items: center;
+        }
+
+        @include responsive ('Mobile') {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 30px;
+            height: auto;
+        }
+
         .card:hover {
             box-shadow: rgba(214, 34, 22, 0.4) 5px 5px, rgba(204, 29, 23, 0.3) 10px 10px, rgba(197, 44, 24, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
         }
+
         .card {
             width: 30%;
             background-color: #3d3b3bc2;
@@ -42,6 +70,16 @@
             align-items: center;
             border-radius: 20px;
             padding: 20px 10px;
+
+            @include responsive ('tablet') {
+                width: 80%;
+                height: 75%;
+            }
+
+            @include responsive ('Mobile') {
+                width: 70%;
+                height: 350px;
+            }
 
             h3 {
                 color: $white;
@@ -60,11 +98,24 @@
             }
 
             .pl {
+
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
                 border: 5px solid $main-color;
                 background-size: cover;
+
+                @include responsive ('tablet') {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0;
+
+                }
+
+                @include responsive ('Mobile') {
+                    width: 150px;
+                    height: 150px;
+                }
 
             }
 

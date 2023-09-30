@@ -1,21 +1,42 @@
-
 @import './group-mixins';
 @import './variable';
 
 header {
-    @include responsive ('tablet') {
-        width: 100%;
-        height: auto;
-    }
     display: flex;
     height: 540px;
     @include bg-img;
     background-image: url(../image/photo_2023-09-24_11-29-11.jpg);
+    background-attachment: fixed;
     color: $white;
-    
+
+    @include responsive ('tablet') {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 .title {
+    background: $background-text;
+    width: 700px;
+    height: 200px;
+
+    margin: {
+        left: 70px;
+        top: 90px;
+    }
+
+    padding: 20px 10px;
+
+    h1 {
+        @include responsive ('tablet') {
+            font-size: 45px;
+        }
+
+        @include main-title;
+        margin-bottom: 30px;
+    }
+
     @include responsive('tablet') {
         width: 500px;
         height: auto;
@@ -28,23 +49,9 @@ header {
         width: 100%;
         height: 80%;
         margin: 40px 50px 70px 20px;
+
         h1 {
             font-size: 33px;
         }
-    }
-    background: $background-text;
-    width: 700px;
-    height: 200px;
-    margin: {
-        left: 70px;
-        top: 90px;
-    }
-    padding: 20px 10px;
-    h1 {
-        @include responsive ('tablet') {
-            font-size: 45px;
-        }
-        @include main-title;
-        margin-bottom: 30px;
     }
 }

@@ -5,32 +5,47 @@
 
 
 .audience {
-    @include responsive ('Mobile') {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
     height: 500px;
     background: url(../image/photo_2023-09-19_08-25-55.jpg);
     @include bg-img;
     @include df-aic;
     flex-direction: column;
+
+    @include responsive ('Mobile') {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
     .our-audience {
         @include responsive ('Mobile') {
             width: 70%;
         }
+
         background: $audience-bg;
         width: 290px;
         margin-top: 60px;
         text-align: center;
+
         h2 {
+            color: $white;
+
             @include responsive ('tablet') {
                 font-size: 27px;
             }
-            color: $white;
+
         }
     }
+
     .text-audience {
+        background: $audience-bg;
+        height: 200px;
+        padding: 40px;
+        margin: 80px 70px;
+        color: $white;
+        text-align: center;
+        @include df-jcc-aic;
+
         @include responsive ("tablet") {
             margin: 80px 40px;
             padding: 20px;
@@ -43,13 +58,5 @@
             padding: 20px 10px;
             margin: 40px 20px 70px 20px;
         }
-        
-        background: $audience-bg;
-        height: 200px;
-        padding: 40px;
-        margin: 80px 70px;
-        color: $white;
-        text-align: center;
-        @include df-jcc-aic;
     }
 }

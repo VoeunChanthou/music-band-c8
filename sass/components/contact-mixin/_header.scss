@@ -4,6 +4,11 @@
 
 
 header {
+    height: 750px;
+    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
+    @include bg-img;
+    @include df-jcsb;
+
     @include responsive ('tablet') {
         width: 100%;
         height: auto;
@@ -11,18 +16,15 @@ header {
         justify-content: center;
         align-items: center;
     }
-    height: 750px;
-    background: linear-gradient(155deg, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.644)), url(../image/band1.jpg);
-    @include bg-img;
-    @include df-jcsb;
 
     .contact-box {
+        position: absolute;
+
         @include responsive ('tablet') {
             position: absolute;
             top: 120px;
             margin: auto;
         }
-        position: absolute;
 
         border: {
             top: 10px solid rgba(83, 80, 80, 0.493);
@@ -46,6 +48,9 @@ header {
     }
 
     .title {
+        width: 600px;
+        padding-left: 100px;
+
         @include responsive ('tablet') {
             margin-top: 150px;
             margin-left: 40px;
@@ -65,8 +70,6 @@ header {
             margin-left: 0;
             padding: 0;
         }
-        width: 600px;
-        padding-left: 100px;
 
         margin: {
             top: 170px;
@@ -74,21 +77,18 @@ header {
         }
 
         h1 {
-            @include responsive ('Mobile') {
-                font-size: 40px;
-            }
             font: {
                 size: 60px;
                 weight: bolder;
             }
 
+            @include responsive ('Mobile') {
+                font-size: 40px;
+            }
+
         }
 
         span {
-            @include responsive ('tablet') {
-                text-align: center;
-                margin-left: 0;
-            }
             font: {
                 size: 40px;
                 weight: bolder;
@@ -96,17 +96,23 @@ header {
 
             color: $white;
             margin-top: -10px;
+
+            @include responsive ('tablet') {
+                text-align: center;
+                margin-left: 0;
+            }
+
         }
 
         p {
+            color: $white;
+            width: 100%;
+            margin: 0;
+
             @include responsive ('tablet') {
                 font-size: 17px;
                 text-align: center;
             }
-
-            color: $white;
-            width: 100%;
-            margin: 0;
         }
 
         h1,
@@ -116,10 +122,14 @@ header {
                 align-items: center;
                 margin-right: 0;
             }
+
             color: $white;
         }
 
         #button {
+            margin-top: 25px;
+            @include button;
+
             @include responsive ('tablet') {
                 margin-left: 0;
                 width: 230px;
@@ -130,8 +140,6 @@ header {
                 width: 150px;
                 font-size: 15px;
             }
-            margin-top: 25px;
-            @include button;
 
             a {
                 text-decoration: none;
@@ -140,10 +148,21 @@ header {
         }
     }
 
-    .pic{
+    .pic {
         display: flex;
         justify-content: center;
+
         img {
+            width: 100%;
+            height: 50%;
+
+            margin: {
+                top: 170px;
+                left: 70px;
+            }
+
+            box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
+
             @include responsive ('tablet') {
                 width: 75%;
                 align-self: center;
@@ -152,16 +171,7 @@ header {
                 margin-bottom: 100px;
                 margin-top: 40px;
             }
-            width: 100%;
-            height: 50%;
-    
-            margin: {
-                top: 170px;
-                left: 70px;
-            }
-    
-            box-shadow: 26px 26px rgba(128, 126, 126, 0.541);
         }
     }
- 
+
 }
