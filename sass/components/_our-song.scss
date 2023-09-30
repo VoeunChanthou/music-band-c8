@@ -72,7 +72,7 @@
                     @include responsive ('Mobile') {
                         width: 100%;
                         height: 100%;
-                        background-image: url(../../../../image/suffer-band.webp);
+                        background-image: url(../../image/photo_2023-09-28_06-09-31.jpg);
                         background-size: cover;
 
                         img {
@@ -91,6 +91,14 @@
                     }
                 }
 
+            }
+            
+            p {
+                @include responsive ('Mobile') {
+                    display: block;
+                    margin: auto;
+                }
+                display: none;
             }
 
             label {

@@ -18,14 +18,14 @@
     }
 
     .our-audience {
-        @include responsive ('Mobile') {
-            width: 70%;
-        }
-
         background: $audience-bg;
         width: 290px;
         margin-top: 60px;
         text-align: center;
+
+        @include responsive ('Mobile') {
+            width: 70%;
+        }
 
         h2 {
             color: $white;

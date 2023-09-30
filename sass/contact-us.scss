@@ -71,6 +71,12 @@ p {
             margin-top: 30px;
             @include df-fd;
 
+            @include responsive ('tablet') {
+                background: $song-color;
+                width: 70%;
+
+            }
+
             .number-phone {
                 display: flex;
                 margin-bottom: 10px;

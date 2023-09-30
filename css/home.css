@@ -523,7 +523,7 @@ header {
   .our-song .group-song .song-card .box .song-img {
     width: 100%;
     height: 100%;
-    background-image: url(../../../../image/suffer-band.webp);
+    background-image: url(../../image/photo_2023-09-28_06-09-31.jpg);
     background-size: cover;
   }
   .our-song .group-song .song-card .box .song-img img {
@@ -537,6 +537,15 @@ header {
 }
 .our-song .group-song .song-card .box .song audio {
   width: 100%;
+}
+.our-song .group-song .song-card p {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .our-song .group-song .song-card p {
+    display: block;
+    margin: auto;
+  }
 }
 .our-song .group-song .song-card label {
   color: white;
@@ -1051,23 +1060,33 @@ footer .our-social .our h5 a {
     display: none;
   }
 }
-footer .our-social .our h5:hover {
-  color: blue;
+footer .our-social .our h5:hover,
+footer .our-social .our a:hover {
+  color: #DB3E34;
 }
 footer .copyright {
+  width: 80%;
+  text-align: center;
   position: absolute;
-  margin: 540px 0px 0px 400px;
+  margin-top: 540px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 @media screen and (max-width: 1024px) {
   footer .copyright {
     margin-top: 650px;
-    margin-left: 200px;
+  }
+  footer .copyright p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   footer .copyright {
     margin: 0;
-    margin-top: 740px;
+    margin-top: 720px;
+  }
+  footer .copyright p {
+    font-size: 17px;
   }
 }
 

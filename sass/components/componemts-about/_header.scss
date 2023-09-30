@@ -18,7 +18,7 @@ header {
     }
 
     background: {
-        image: url(../image/about-bg-1.jpg);
+        image: url(../../../image/photo_2023-09-25_13-40-56.jpg);
         size: cover;
         attachment: fixed;
     }
@@ -69,7 +69,7 @@ header {
             @include responsive ('tablet') {
                 width: 300px;
                 height: 210px;
-                border: 12px solid $main-color;
+                border: 12px solid #db3f347e;
             }
         }
     }
