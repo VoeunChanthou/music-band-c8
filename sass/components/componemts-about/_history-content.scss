@@ -8,8 +8,7 @@
 
 
 .history-content {
-    display: flex;
-    flex-direction: column;
+    @include df-fd;
     text-align: center;
     background: $card-song;
     height: 350px;
@@ -20,10 +19,13 @@
     }
 
     h2 {
-        font-size: 33px;
         color: $main-color;
         margin-top: 60px;
-        font-weight: bolder;
+
+        font: {
+            size: 33px;
+            weight: bolder;
+        }
 
         @include responsive ('tablet') {
             font-size: 27px;

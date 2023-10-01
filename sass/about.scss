@@ -1,41 +1,15 @@
-@import './components/nav';
+@import './main';
 @import './components/componemts-about/header';
 @import './components/componemts-about/team-picture';
 @import './components/componemts-about/team-member';
 @import './components/componemts-about/history-content';
 @import './components/componemts-about/viewer';
-@import './components/footer';
 
 
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Saira', sans-serif;
-}
-
-.container {
-    width: 100%;
-    height: auto;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-p {
-    font-size: 20px;
-}
-
-
-// @import './components/MIxins/about-responsive/tablet';
-// @import './components/MIxins/about-responsive/mobile';
 
 
 
